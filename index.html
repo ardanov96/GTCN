@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>GLITCHICONS — Decepticons Siege Division</title>
 <link rel="icon" type="image/svg+xml" href="glitchicons.png">
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -274,6 +274,98 @@ footer{background:var(--bg-deep);border-top:1px solid rgba(107,0,255,.2);padding
 
 .pkg-price-idr{font-family:'Share Tech Mono',monospace;font-size:.62rem;color:var(--iron-sheen);letter-spacing:.04em;margin-top:.1rem;display:inline-block}
 
+
+/* ── MOBILE OVERFLOW FIX ── */
+html{overflow-x:hidden}
+*{max-width:100%}
+img{max-width:100%;height:auto}
+
+/* ── MOBILE GLOBAL ── */
+@media(max-width:480px){
+  section{padding:3rem 1.25rem}
+  
+  /* Hero */
+  #hero{padding:5rem 1.25rem 2.5rem;min-height:100svh}
+  .hero-badge{font-size:.55rem;letter-spacing:.15em;padding:.3rem .75rem;word-break:break-word;text-align:center}
+  .hero-title{font-size:clamp(2.4rem,13vw,3.5rem);letter-spacing:.02em}
+  .hero-title-shadow{font-size:clamp(2.4rem,13vw,3.5rem);letter-spacing:.02em}
+  .hero-subtitle{font-size:.65rem;letter-spacing:.18em}
+  .hero-desc{font-size:1rem;padding:0 .25rem}
+  .hero-tagline{font-size:.58rem;letter-spacing:.08em;word-break:break-word}
+  .hero-ctas{flex-direction:column;align-items:center;gap:.75rem}
+  .btn-primary,.btn-secondary{width:100%;max-width:280px;text-align:center;padding:.85rem 1rem}
+  .hero-stats{gap:1.5rem}
+  .stat-num{font-size:1.4rem}
+
+  /* Nav */
+  nav{padding:.7rem 1.25rem}
+  .nav-logo{font-size:.85rem;letter-spacing:.1em}
+  .nav-logo-img{width:26px;height:26px}
+  .nav-cta{font-size:.65rem;padding:.4rem .9rem}
+
+  /* About / emblem */
+  .emblem-container{width:240px;height:240px}
+  .emblem-ring{width:230px;height:230px}
+  .emblem-ring-2{width:195px;height:195px}
+  .emblem-logo{width:160px;height:160px}
+  .emblem-ticks{width:230px;height:230px}
+  .cb{width:14px;height:14px}
+  .cb-tl{top:28px;left:28px}.cb-tr{top:28px;right:28px}
+  .cb-bl{bottom:28px;left:28px}.cb-br{bottom:28px;right:28px}
+
+  /* Section titles */
+  .section-title{font-size:1.6rem}
+  .section-desc{font-size:.95rem}
+
+  /* Caps grid */
+  .caps-grid{clip-path:none}
+  .cap-card{padding:1.5rem}
+
+  /* Architecture — make scrollable horizontally */
+  .arch-diagram{padding:1.5rem 1rem;clip-path:none;overflow-x:auto}
+  .arch-diagram::before{display:none}
+  .arch-row{gap:.5rem;min-width:300px}
+  .arch-box{padding:.5rem .6rem;font-size:.7rem;max-width:none;min-width:80px}
+  .arch-box-title{font-size:.55rem;letter-spacing:.04em}
+  .arch-box-sub{font-size:.48rem}
+  .arch-arrow{font-size:.8rem}
+  .arch-central{padding:1rem 1.25rem;clip-path:none;max-width:100%}
+  .arch-central-title{font-size:.75rem;letter-spacing:.08em}
+  .arch-central-sub{font-size:.55rem}
+  .arch-central-logo{width:28px;height:28px}
+
+  /* Stack grid */
+  .stack-grid{grid-template-columns:1fr 1fr;gap:.75rem;margin-top:2rem}
+  .stack-item{padding:1.1rem}
+  .stack-lang{font-size:.95rem}
+
+  /* Contribute */
+  .code-block{font-size:.7rem;padding:1.1rem;clip-path:none}
+  .code-block::before{display:none}
+
+  /* Services */
+  .services-hero{padding:1.5rem;clip-path:none}
+  .svc-proof{gap:1.25rem}
+  .proof-num{font-size:1.2rem}
+  .pkg-panel{padding:1.25rem}
+  .pkg{padding:.75rem 0}
+  .pkg-price{font-size:.9rem}
+  .svc-secondary{grid-template-columns:1fr}
+  .svc-card{padding:1.25rem;clip-path:none}
+
+  /* Footer */
+  .footer-main{flex-direction:column;gap:1.25rem;padding-bottom:1.25rem}
+  .footer-links{flex-wrap:wrap;gap:.75rem}
+  .footer-links a{font-size:.65rem}
+  .footer-bottom{flex-direction:column;gap:.75rem}
+  .footer-copyright{text-align:left}
+  .creator-name{font-size:.85rem}
+
+  /* Contributor tier cards */
+  .tiers-grid{grid-template-columns:1fr}
+  .tier-card{padding:1.5rem 1.25rem}
+}
+
 </style>
 </head>
 <body>
@@ -299,7 +391,7 @@ footer{background:var(--bg-deep);border-top:1px solid rgba(107,0,255,.2);padding
     <li><a href="#contribute">CONTRIBUTE</a></li>
     <li><a href="#sponsors">SUPPORT</a></li>
   </ul>
-  <a href="https://github.com/ardanov96/glitchicons" class="nav-cta">⬡ GITHUB</a>
+  <a href="https://github.com" class="nav-cta">⬡ GITHUB</a>
 </nav>
 
 <!-- HERO -->
@@ -316,7 +408,7 @@ footer{background:var(--bg-deep);border-top:1px solid rgba(107,0,255,.2);padding
     <p class="hero-desc">Open-source offensive fuzzing toolkit engineered for <span>security researchers</span>, <span>bug bounty hunters</span>, and <span>red team operators</span>. Powered by LLM-driven mutation intelligence.</p>
     <p class="hero-tagline"><em>Where others probe, we siege.</em> &nbsp;·&nbsp; <em>Where others test, we break.</em></p>
     <div class="hero-ctas">
-      <a href="https://github.com/ardanov96/glitchicons" class="btn-primary">⬡ DEPLOY ON GITHUB</a>
+      <a href="https://github.com" class="btn-primary">⬡ DEPLOY ON GITHUB</a>
       <a href="#capabilities" class="btn-secondary">› VIEW CAPABILITIES</a>
     </div>
     <div class="hero-stats">
@@ -500,10 +592,9 @@ footer{background:var(--bg-deep);border-top:1px solid rgba(107,0,255,.2);padding
             <div class="svc-proof">
               <div><span class="proof-num">AI</span><span class="proof-lbl">LLM + Fuzzing</span></div>
               <div><span class="proof-num">24h</span><span class="proof-lbl">Response Time</span></div>
-              <div><span class="proof-num">Bali</span><span class="proof-lbl">Based in ID</span></div>
             </div>
             <div class="svc-ctas">
-              <a href="mailto:ardatron@glitchicons.io" class="btn-primary">⬡ DISCUSS YOUR NEEDS</a>
+              <a href="mailto:ardanov96@gmail.com" class="btn-primary">⬡ DISCUSS YOUR NEEDS</a>
               <a href="#" class="btn-secondary">› VIEW SAMPLE REPORT</a>
             </div>
           </div>
@@ -545,7 +636,7 @@ footer{background:var(--bg-deep);border-top:1px solid rgba(107,0,255,.2);padding
             </div>
 
             <div class="pkg-cta-wrap">
-              <a href="mailto:ardatron@glitchicons.io" class="btn-primary" style="display:block;text-align:center;padding:.75rem">⬡ REQUEST A QUOTE</a>
+              <a href="mailto:ardanov96@gmail.com" class="btn-primary" style="display:block;text-align:center;padding:.75rem">⬡ REQUEST A QUOTE</a>
             </div>
           </div>
         </div>
@@ -572,7 +663,7 @@ footer{background:var(--bg-deep);border-top:1px solid rgba(107,0,255,.2);padding
             <span class="price-usd">Free for research &nbsp;·&nbsp; Enterprise: $120–300 / seat / yr</span>
             <span class="price-idr" style="display:none">Free for research &nbsp;·&nbsp; Enterprise: Rp 2–5jt / seat / tahun</span>
           </div>
-          <a href="https://github.com/ardanov96/glitchicons" class="btn-secondary" style="display:inline-block;padding:.55rem 1.1rem;font-size:.7rem">⬡ VIEW ON GITHUB</a>
+          <a href="https://github.com" class="btn-secondary" style="display:inline-block;padding:.55rem 1.1rem;font-size:.7rem">⬡ VIEW ON GITHUB</a>
         </div>
       </div>
 
@@ -605,7 +696,7 @@ footer{background:var(--bg-deep);border-top:1px solid rgba(107,0,255,.2);padding
       <div class="creator-role">WARLORD CLASS · CHIEF ARCHITECT · DECEPTICONS SIEGE DIVISION</div>
     </div>
     <div class="footer-copyright">
-      <strong id="copyrightYear"></strong> ARDATRON. ALL RIGHTS RESERVED.<br>
+      <strong id="copyrightYear"></strong> GLITCHICONS. ALL RIGHTS RESERVED.<br>
       MIT LICENSE · FOR AUTHORIZED USE ONLY
     </div>
   </div>
