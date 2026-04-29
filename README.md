@@ -24,4 +24,4 @@ glitchicons/
 - Fallback on timeout: USD (default)
 
 ## License
-MIT © 2025 ARDATRON
+MIT © 2026 ARDATRON
