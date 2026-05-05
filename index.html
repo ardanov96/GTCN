@@ -399,7 +399,7 @@ img{max-width:100%;height:auto}
   <div class="hero-grid"></div>
   <canvas id="attackCanvas"></canvas>
   <div class="hero-content">
-    <div class="hero-badge">◈ SUB-FACTION: GLITCHICONS ◈ DECEPTICONS SIEGE DIVISION</div>
+    <div class="hero-badge">◈ SUB-FACTION: GLITCHICONS ◈ DECEPTICONS SIEGE DIVISION ◈ v0.6.0</div>
     <div style="position:relative;display:inline-block;width:100%">
       <div class="hero-title-shadow">GLITCHICONS</div>
       <h1 class="hero-title"><span class="g-purple">GLITCH</span><span class="g-chrome">ICONS</span></h1>
@@ -412,9 +412,10 @@ img{max-width:100%;height:auto}
       <a href="#capabilities" class="btn-secondary">› VIEW CAPABILITIES</a>
     </div>
     <div class="hero-stats">
-      <div class="stat-item"><span class="stat-num" data-count="142">0</span><span class="stat-label">Vulnerabilities Found</span></div>
+      <div class="stat-item"><span class="stat-num" data-count="33">0</span><span class="stat-label">Vulnerabilities Found</span></div>
       <div class="stat-item"><span class="stat-num">AI</span><span class="stat-label">LLM Mutation Engine</span></div>
-      <div class="stat-item"><span class="stat-num" data-count="47">0</span><span class="stat-label">Contributors</span></div>
+      <div class="stat-item"><span class="stat-num" data-count="15">0</span><span class="stat-label">Web Modules</span></div>
+      <div class="stat-item"><span class="stat-num">14</span><span class="stat-label">CLI Commands</span></div>
       <div class="stat-item"><span class="stat-num">MIT</span><span class="stat-label">Open License</span></div>
     </div>
   </div>
@@ -454,16 +455,19 @@ img{max-width:100%;height:auto}
   <div id="capabilities">
     <div class="caps-header" data-reveal>
       <div class="section-tag">SIEGE MODULES</div>
-      <h2 class="section-title">COMBAT<br><span style="color:var(--purple-bright)">CAPABILITIES</span></h2>
-      <p class="section-desc">Six siege modules. Each targets a different wall. None stops until the system falls.</p>
+      <h2 class="section-title">SIEGE<br><span style="color:var(--purple-bright)">CAPABILITIES</span></h2>
+      <p class="section-desc">9 siege modules across binary, web, and protocol attack surfaces. Each targets a different wall. None stops until the system falls.</p>
     </div>
     <div class="caps-grid">
-      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">01</div><div class="cap-title">LLM MUTATION ENGINE</div><div class="cap-desc">Large language models analyze source code context and generate targeted mutation seeds — intelligent adversarial inputs based on parser logic.</div><div class="cap-tags"><span class="cap-tag">GPT-4o</span><span class="cap-tag">Claude API</span><span class="cap-tag">RAG Pipeline</span></div></div>
-      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">02</div><div class="cap-title">AFL++ INTEGRATION</div><div class="cap-desc">Glitchicons seeds AFL++ with LLM-generated inputs, dramatically reducing time-to-crash by front-loading high-value code paths identified by AI.</div><div class="cap-tags"><span class="cap-tag">AFL++</span><span class="cap-tag">libFuzzer</span><span class="cap-tag">ASAN</span></div></div>
-      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">03</div><div class="cap-title">CRASH TRIAGE AI</div><div class="cap-desc">Automated crash deduplication and severity classification. Triages hundreds of crashes per minute, surfaces critical vulns, suppresses false positives.</div><div class="cap-tags"><span class="cap-tag">Valgrind</span><span class="cap-tag">GDB</span><span class="cap-tag">ML Classifier</span></div></div>
-      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">04</div><div class="cap-title">PROTOCOL FUZZER</div><div class="cap-desc">Structured fuzzing for network protocols — HTTP, TLS, DNS, gRPC. LLM generates protocol-aware malformed packets targeting state machine edges.</div><div class="cap-tags"><span class="cap-tag">Boofuzz</span><span class="cap-tag">Scapy</span><span class="cap-tag">Custom BPF</span></div></div>
-      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">05</div><div class="cap-title">CODE COVERAGE MAP</div><div class="cap-desc">Real-time coverage visualization showing which code branches are exercised. Identify blind spots and direct the LLM to target uncovered paths.</div><div class="cap-tags"><span class="cap-tag">LLVM Coverage</span><span class="cap-tag">gcov</span><span class="cap-tag">D3 Viz</span></div></div>
-      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">06</div><div class="cap-title">AUTO REPORT GEN</div><div class="cap-desc">Auto-generate structured vulnerability reports — CVSS scoring, reproduction steps, impact analysis. Ready for HackerOne or Bugcrowd submission.</div><div class="cap-tags"><span class="cap-tag">Markdown</span><span class="cap-tag">CVSS v3.1</span><span class="cap-tag">LLM Narration</span></div></div>
+      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">01</div><div class="cap-title">RECON ENGINE</div><div class="cap-desc">Full automated recon pipeline — subdomain enumeration, HTTP probing, URL crawling, DNS intelligence. Passive and active modes. Zero manual steps.</div><div class="cap-tags"><span class="cap-tag">subfinder</span><span class="cap-tag">httpx</span><span class="cap-tag">katana</span></div></div>
+      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">02</div><div class="cap-title">VULNERABILITY SCANNER</div><div class="cap-desc">12,958 nuclei templates across 5 scan profiles. Detects CVEs, exposed panels, misconfigurations, and SSL/TLS weaknesses at scale.</div><div class="cap-tags"><span class="cap-tag">nuclei v3.8</span><span class="cap-tag">12,958 tmpl</span><span class="cap-tag">CVE detect</span></div></div>
+      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">03</div><div class="cap-title">AUTH ATTACK SUITE</div><div class="cap-desc">JWT algorithm confusion, OAuth state bypass, redirect_uri hijack, session fixation and cookie entropy analysis. All automated.</div><div class="cap-tags"><span class="cap-tag">JWT</span><span class="cap-tag">OAuth</span><span class="cap-tag">Session</span></div></div>
+      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">04</div><div class="cap-title">INJECTION SUITE</div><div class="cap-desc">XSS (reflected/stored/DOM), SQL injection (error + time-based blind), SSRF (cloud metadata), SSTI (Jinja2/Twig), XXE — all in one suite.</div><div class="cap-tags"><span class="cap-tag">XSS</span><span class="cap-tag">SQLi</span><span class="cap-tag">SSRF/SSTI/XXE</span></div></div>
+      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">05</div><div class="cap-title">BUSINESS LOGIC</div><div class="cap-desc">IDOR fuzzing (sequential + mass assignment), price manipulation (negative/overflow/discount), race condition with concurrent thread analysis.</div><div class="cap-tags"><span class="cap-tag">IDOR</span><span class="cap-tag">Price Manip</span><span class="cap-tag">Race Cond</span></div></div>
+      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">06</div><div class="cap-title">LLM MUTATION ENGINE</div><div class="cap-desc">LLMs analyze source code context and generate precision attack inputs — not random noise, but surgical adversarial payloads per target.</div><div class="cap-tags"><span class="cap-tag">Claude API</span><span class="cap-tag">Qwen2.5</span><span class="cap-tag">RAG Pipeline</span></div></div>
+      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">07</div><div class="cap-title">AFL++ FUZZING</div><div class="cap-desc">AI-seeded binary fuzzer at 300,000 exec/sec. GDB + LLM crash triage delivers CVE-style reports in under 30 seconds per finding.</div><div class="cap-tags"><span class="cap-tag">AFL++</span><span class="cap-tag">GDB + LLM</span><span class="cap-tag">ASAN</span></div></div>
+      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">08</div><div class="cap-title">BRUTE FORCE</div><div class="cap-desc">CSRF-aware brute force with lockout and rate-limit detection. Zero-delay stress mode. Full Tor routing. Proven on 70K-user live platform.</div><div class="cap-tags"><span class="cap-tag">CSRF-aware</span><span class="cap-tag">Tor</span><span class="cap-tag">Rate analysis</span></div></div>
+      <div class="cap-card" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">09</div><div class="cap-title">AUTO REPORT GEN</div><div class="cap-desc">CVSS v3.1 scored reports. Executive summaries for non-technical stakeholders. HackerOne, Bugcrowd, and internal pentest formats.</div><div class="cap-tags"><span class="cap-tag">CVSS v3.1</span><span class="cap-tag">Markdown</span><span class="cap-tag">LLM Narration</span></div></div>
     </div>
   </div>
 </section>
@@ -474,10 +478,10 @@ img{max-width:100%;height:auto}
   <div class="stack-inner">
     <div data-reveal><div class="section-tag">ENGINEERING</div><h2 class="section-title">TECH<br><span style="color:var(--purple-bright)">STACK</span></h2></div>
     <div class="stack-grid">
-      <div class="stack-item" data-reveal><div class="stack-lang">Python 3</div><div class="stack-role">ORCHESTRATION LAYER</div><div class="stack-libs">Core engine, LLM integration, CLI, reporting pipeline</div></div>
-      <div class="stack-item" data-reveal><div class="stack-lang">Rust</div><div class="stack-role">PERFORMANCE LAYER</div><div class="stack-libs">High-throughput fuzzing harnesses, crash collection, concurrency</div></div>
-      <div class="stack-item" data-reveal><div class="stack-lang">C / C++</div><div class="stack-role">HARNESS LAYER</div><div class="stack-libs">AFL++ harnesses, libFuzzer targets, sanitizer integration</div></div>
-      <div class="stack-item" data-reveal><div class="stack-lang">LLM API</div><div class="stack-role">INTELLIGENCE LAYER</div><div class="stack-libs">Claude API / OpenAI — mutation strategy, code analysis, reporting</div></div>
+      <div class="stack-item" data-reveal><div class="stack-lang">Python 3</div><div class="stack-role">ORCHESTRATION LAYER</div><div class="stack-libs">Core engine, LLM integration, CLI (14 commands), web modules, reporting</div></div>
+      <div class="stack-item" data-reveal><div class="stack-lang">Go 1.22</div><div class="stack-role">WEB OFFENSIVE LAYER</div><div class="stack-libs">subfinder v2.14 · httpx v1.9 · nuclei v3.8 (12,958 templates) · katana</div></div>
+      <div class="stack-item" data-reveal><div class="stack-lang">C / C++</div><div class="stack-role">HARNESS LAYER</div><div class="stack-libs">AFL++ harnesses, libFuzzer targets, sanitizer integration (ASAN/MSAN)</div></div>
+      <div class="stack-item" data-reveal><div class="stack-lang">LLM API</div><div class="stack-role">INTELLIGENCE LAYER</div><div class="stack-libs">Claude API · Qwen2.5-Coder (local) — mutation, analysis, payload gen</div></div>
     </div>
   </div>
 </section>
@@ -549,8 +553,11 @@ img{max-width:100%;height:auto}
         <span class="cl"><span class="cp">$ </span><span class="cm">cp .env.example .env &amp;&amp; vim .env</span></span>
         <span class="cl">&nbsp;</span>
         <span class="cl"><span class="cc"># Launch the engine</span></span>
-        <span class="cl"><span class="cp">$ </span><span class="cm">glitchicons fuzz --target ./binary --mode ai</span></span>
-        <span class="cl" style="color:var(--purple-bright)">[⬡] GLITCHICONS SIEGE CORE ONLINE — BREACH COMMENCING</span>
+        <span class="cl"><span class="cp">$ </span><span class="cm">glitchicons recon target.com --mode passive
+        <span class="cl" style="color:var(--purple-bright)">[⬡] 20+ subdomains — DMARC p=none detected</span>
+        <span class="cl"><span class="cp">$ </span><span class="cm">glitchicons scan https://target.com --profile deep</span></span>
+        <span class="cl"><span class="cp">$ </span><span class="cm">glitchicons fuzz --target ./binary --mode ai</span></span></span></span>
+        <span class="cl" style="color:var(--purple-bright)">[⬡] GLITCHICONS v0.6.0 — 15 MODULES ONLINE — BREACH COMMENCING</span>
       </div>
       <div class="ranks">
         <div class="ranks-title">CONTRIBUTOR RANKS</div>
@@ -590,8 +597,8 @@ img{max-width:100%;height:auto}
               engineering team can act on immediately.
             </p>
             <div class="svc-proof">
-              <div><span class="proof-num">AI</span><span class="proof-lbl">LLM + Fuzzing</span></div>
-              <div><span class="proof-num">24h</span><span class="proof-lbl">Response Time</span></div>
+              <div><span class="proof-num">18</span><span class="proof-lbl">Findings Found</span></div>
+              <div><span class="proof-num">15</span><span class="proof-lbl">Web Modules</span></div>
             </div>
             <div class="svc-ctas">
               <a href="mailto:ardanov96@gmail.com" class="btn-primary">⬡ DISCUSS YOUR NEEDS</a>
