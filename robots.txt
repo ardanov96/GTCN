@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ardanov96.github.io/GTCN/sitemap.xml
