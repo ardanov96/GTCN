@@ -3,66 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>GLITCHICONS — AI-Powered Security Research Platform | v1.3.0</title>
+<title>GLITCHICONS — AI-Powered Security Research Platform | v2.0.0</title>
 <link rel="icon" type="image/png" href="glitchicons.png">
-
-<meta name="description" content="GLITCHICONS is an open-source AI-powered security research platform — 748 tests, 6 Go binaries, LLM mutation intelligence, WAF evasion, and full integration layer. MIT licensed.">
+<meta name="description" content="GLITCHICONS v2.0.0 — 1083 tests, 6 Go binaries, Web Dashboard, Multi-Target scanning, SAML/PKCE/SSO bypass, Cloud Security, LLM mutation. MIT licensed.">
 <link rel="canonical" href="https://ardanov96.github.io/GTCN/">
 <link rel="alternate" hreflang="en" href="https://ardanov96.github.io/GTCN/">
 <link rel="alternate" hreflang="id" href="https://ardanov96.github.io/GTCN/">
 <link rel="alternate" hreflang="x-default" href="https://ardanov96.github.io/GTCN/">
 <link rel="sitemap" type="application/xml" href="/GTCN/sitemap.xml">
-
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ardanov96.github.io/GTCN/">
-<meta property="og:title" content="GLITCHICONS — AI-Powered Security Research Platform">
-<meta property="og:description" content="748 tests. 6 Go binaries. LLM mutation loop. WAF evasion. Burp/Slack/Jira/SARIF integration. Open-source. MIT licensed.">
+<meta property="og:title" content="GLITCHICONS v2.0.0 — AI-Powered Security Research Platform">
+<meta property="og:description" content="1083 tests. 6 Go binaries. Web Dashboard. Multi-Target. SAML/PKCE/SSO. Cloud Security. LLM mutation. Open-source.">
 <meta property="og:image" content="https://ardanov96.github.io/GTCN/og-preview.png">
 <meta property="og:site_name" content="GLITCHICONS">
-
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://ardanov96.github.io/GTCN/">
-<meta name="twitter:title" content="GLITCHICONS — AI-Powered Security Research Platform">
-<meta name="twitter:description" content="748 tests. 6 Go binaries. LLM mutation. WAF evasion. Open-source security platform.">
+<meta name="twitter:title" content="GLITCHICONS v2.0.0 — AI-Powered Security Research Platform">
+<meta name="twitter:description" content="1083 tests. 6 Go binaries. Web Dashboard. Multi-Target. Cloud Security. Open-source.">
 <meta name="twitter:image" content="https://ardanov96.github.io/GTCN/og-preview.png">
-
 <meta name="robots" content="index, follow">
 <meta name="author" content="GLITCHICONS">
-<meta name="keywords" content="fuzzing toolkit, AI pentest, bug bounty, red team, LLM mutation, WAF evasion, security research, open source security, offensive security, Go security tools, CVSS, SARIF, Burp Suite">
-
+<meta name="keywords" content="security platform, AI pentest, bug bounty, red team, LLM mutation, WAF evasion, SAML bypass, PKCE, SSO, cloud security, S3, Go security tools, CVSS, SARIF, web dashboard">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "GLITCHICONS",
   "url": "https://ardanov96.github.io/GTCN/",
-  "description": "Open-source AI-powered security research platform. 748 tests, 6 Go binaries, LLM mutation intelligence, WAF evasion, Burp/Slack/Jira/SARIF integration.",
+  "description": "Open-source AI-powered security research platform. 1083 tests, 6 Go binaries, web dashboard, multi-target scanning, SAML/PKCE/SSO bypass, cloud security, LLM mutation.",
   "applicationCategory": "SecurityApplication",
   "operatingSystem": "Linux, macOS, Windows",
-  "softwareVersion": "1.3.0",
+  "softwareVersion": "2.0.0",
   "license": "https://opensource.org/licenses/MIT",
   "codeRepository": "https://github.com/ardanov96/glitchicons",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "author": { "@type": "Organization", "name": "GLITCHICONS" }
 }
 </script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
 <link rel="preload" href="style.css" as="style">
 <link rel="stylesheet" href="style.css">
-
-<noscript>
-<style>
-  .loading-screen { display: none !important; }
-  [data-reveal] { opacity: 1 !important; transform: none !important; }
-</style>
-</noscript>
+<noscript><style>.loading-screen{display:none!important}[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
 
-<!-- LOADING SCREEN -->
 <div class="loading-screen" id="loadingScreen">
   <img src="glitchicons.png" class="loading-logo" alt="GLITCHICONS logo">
   <div class="loading-bar-wrap"><div class="loading-bar" id="loadBar"></div></div>
@@ -91,22 +77,22 @@
   <div class="hero-grid"></div>
   <canvas id="attackCanvas"></canvas>
   <div class="hero-content">
-    <div class="hero-badge">◈ SUB-FACTION: GLITCHICONS ◈ DECEPTICONS SIEGE DIVISION ◈ v1.3.0</div>
+    <div class="hero-badge">◈ SUB-FACTION: GLITCHICONS ◈ DECEPTICONS SIEGE DIVISION ◈ v2.0.0</div>
     <div style="position:relative;display:inline-block;width:100%">
       <div class="hero-title-shadow">GLITCHICONS</div>
       <h1 class="hero-title"><span class="g-purple">GLITCH</span><span class="g-chrome">ICONS</span></h1>
     </div>
     <div class="hero-subtitle">// AI-POWERED SIEGE &amp; EXPLOIT SYNTHESIS ENGINE //</div>
-    <p class="hero-desc">Open-source offensive security platform engineered for <span>security researchers</span>, <span>bug bounty hunters</span>, and <span>red team operators</span>. LLM-driven mutation · WAF evasion · 6 Go binaries · 748 unit tests.</p>
+    <p class="hero-desc">Open-source offensive security platform engineered for <span>security researchers</span>, <span>bug bounty hunters</span>, and <span>red team operators</span>. Web Dashboard · Multi-Target · Cloud Security · Auth Bypass · 6 Go binaries.</p>
     <p class="hero-tagline"><em>Where others probe, we siege.</em> &nbsp;·&nbsp; <em>Where others test, we break.</em></p>
     <div class="hero-ctas">
       <a href="https://github.com/ardanov96/glitchicons" class="btn-primary">⬡ DEPLOY ON GITHUB</a>
       <a href="#capabilities" class="btn-secondary">› VIEW CAPABILITIES</a>
     </div>
     <div class="hero-stats">
-      <div class="stat-item"><span class="stat-num" data-count="748">0</span><span class="stat-label">Unit Tests · 0 Failures</span></div>
+      <div class="stat-item"><span class="stat-num" data-count="1083">0</span><span class="stat-label">Unit Tests · 0 Failures</span></div>
       <div class="stat-item"><span class="stat-num">6</span><span class="stat-label">Go Binaries</span></div>
-      <div class="stat-item"><span class="stat-num" data-count="17">0</span><span class="stat-label">Attack Modules</span></div>
+      <div class="stat-item"><span class="stat-num" data-count="28">0</span><span class="stat-label">Attack Modules</span></div>
       <div class="stat-item"><span class="stat-num">15</span><span class="stat-label">CLI Commands</span></div>
       <div class="stat-item"><span class="stat-num">MIT</span><span class="stat-label">Open License</span></div>
     </div>
@@ -130,12 +116,12 @@
     <div data-reveal>
       <div class="section-tag">PROTOCOL</div>
       <h2 class="section-title">FORGED FOR<br><span style="color:var(--purple-bright)">SIEGE</span></h2>
-      <p class="section-desc">Glitchicons is the Decepticons' siege weapon: engineered to assault, destabilize, and breach. Not recon. Not surveillance. Adaptive offensive intelligence.</p>
+      <p class="section-desc">Glitchicons is the Decepticons' siege weapon: engineered to assault, destabilize, and breach. Not recon. Not surveillance. Adaptive offensive intelligence at every layer.</p>
       <ul class="philo-list">
-        <li><span class="philo-tag">SYS 01</span><span class="philo-body"><strong>Adaptive Mutation.</strong> LLM feedback loop evolves payloads based on each response — not random noise, but surgical precision that learns from every probe.</span></li>
-        <li><span class="philo-tag">SYS 02</span><span class="philo-body"><strong>Zero False Positives.</strong> Every finding passes a 4-step verification pipeline — static analysis, LLM reasoning, confidence scoring, optional re-probe — before entering the report.</span></li>
-        <li><span class="philo-tag">SYS 03</span><span class="philo-body"><strong>Full Stack Coverage.</strong> Python intelligence layer + 6 Go binaries: race conditions at nanosecond precision, 10k+ ports/sec scanning, DNS brute at 100k queries/sec.</span></li>
-        <li><span class="philo-tag">SYS 04</span><span class="philo-body"><strong>Open Force.</strong> MIT-licensed. 748 unit tests. pip install ready. Plugin system for community extensions. Burp/Slack/Jira/SARIF integrations built-in.</span></li>
+        <li><span class="philo-tag">SYS 01</span><span class="philo-body"><strong>Adaptive Mutation.</strong> LLM feedback loop evolves payloads based on each HTTP response — not random noise, but surgical precision that learns from every probe.</span></li>
+        <li><span class="philo-tag">SYS 02</span><span class="philo-body"><strong>Full Stack Coverage.</strong> Python intelligence + 6 Go binaries + cloud audit + SAML/PKCE/SSO bypass + REST/GraphQL/WebSocket advanced attacks.</span></li>
+        <li><span class="philo-tag">SYS 03</span><span class="philo-body"><strong>Multi-Target at Scale.</strong> v2.0.0 concurrent multi-target orchestration with real-time web dashboard — scan 10 targets in parallel, watch findings stream live.</span></li>
+        <li><span class="philo-tag">SYS 04</span><span class="philo-body"><strong>Open Force.</strong> MIT-licensed. 1083 unit tests. pip install ready. Plugin system for community extensions. Burp/Slack/Jira/SARIF/PDF integrations built-in.</span></li>
       </ul>
     </div>
   </div>
@@ -148,60 +134,78 @@
     <div class="caps-header" data-reveal>
       <div class="section-tag">SIEGE MODULES</div>
       <h2 class="section-title">SIEGE<br><span style="color:var(--purple-bright)">CAPABILITIES</span></h2>
-      <p class="section-desc">17 Python modules + 6 Go binaries. Select a layer to explore.</p>
+      <p class="section-desc">28 Python modules + 6 Go binaries across 5 attack layers. Select a layer to explore.</p>
     </div>
 
-    <!-- Tab buttons -->
     <div class="caps-tabs" id="capsTabs">
       <button class="caps-tab active" data-tab="0">⚡ INTELLIGENCE</button>
       <button class="caps-tab" data-tab="1">🕸 WEB ATTACK</button>
-      <button class="caps-tab" data-tab="2">⬡ GO BINARIES</button>
+      <button class="caps-tab" data-tab="2">☁ CLOUD &amp; AUTH</button>
+      <button class="caps-tab" data-tab="3">⬡ GO BINARIES</button>
+      <button class="caps-tab" data-tab="4">⚙ PLATFORM</button>
     </div>
 
-    <!-- Slider wrapper -->
     <div class="caps-slider-outer">
-      <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous">‹</button>
-      <div class="caps-slider-viewport" id="sliderViewport">
-        <div class="caps-slider" id="capsSlider">
+      <button class="slider-btn" id="sliderPrev" aria-label="Previous">&#8249;</button>
+      <div class="caps-slider-viewport">
+        <div id="capsSlider">
 
-          <!-- ── TAB 0: INTELLIGENCE ── -->
-          <div class="caps-panel" data-panel="0">
-            <div class="cap-card-s"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">01</div><div class="cap-title">LLM MUTATION LOOP</div><div class="cap-desc">Adaptive payload evolution — LLM reads each HTTP response and generates precision mutations. SQLi, XSS, SSTI, SSRF. Payload gets smarter every round. Ollama · Anthropic · OpenAI.</div><div class="cap-tags"><span class="cap-tag">Adaptive</span><span class="cap-tag">54 tests</span></div></div>
-            <div class="cap-card-s"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">02</div><div class="cap-title">WAF EVASION ENGINE</div><div class="cap-desc">30+ encoding techniques: URL, unicode, HTML entity, hex, CHAR(), case, comment injection, null byte, SQL concat, XSS wrappers. 8 WAF fingerprints. Smart bypass ordered by effectiveness per WAF.</div><div class="cap-tags"><span class="cap-tag">Cloudflare</span><span class="cap-tag">ModSec</span><span class="cap-tag">30+ tech</span></div></div>
-            <div class="cap-card-s"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">03</div><div class="cap-title">FALSE POSITIVE REDUCER</div><div class="cap-desc">4-step pipeline before any finding enters report: static evidence → LLM reasoning (confidence 0.0–1.0) → optional live re-probe. Verdict: CONFIRMED / LIKELY / UNCERTAIN / FALSE_POSITIVE.</div><div class="cap-tags"><span class="cap-tag">LLM verify</span><span class="cap-tag">47 tests</span></div></div>
-            <div class="cap-card-s"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">04</div><div class="cap-title">SEVERITY REASONING</div><div class="cap-desc">Pure Python CVSS v3.1 calculator + LLM narrative. Every finding gets: vector string, metric breakdown, plain-English narrative, business impact, executive summary, remediation priority 0–100.</div><div class="cap-tags"><span class="cap-tag">CVSS v3.1</span><span class="cap-tag">43 tests</span></div></div>
+          <!-- TAB 0: INTELLIGENCE -->
+          <div class="caps-panel" id="panel0">
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">01</div><div class="cap-title">LLM MUTATION LOOP</div><div class="cap-desc">Adaptive payload evolution — LLM reads each HTTP response and generates precision mutations. SQLi, XSS, SSTI, SSRF. Payload gets smarter every round. Ollama · Anthropic · OpenAI.</div><div class="cap-tags"><span class="cap-tag">Adaptive</span><span class="cap-tag">54 tests</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">02</div><div class="cap-title">WAF EVASION ENGINE</div><div class="cap-desc">30+ techniques: URL, unicode, HTML entity, hex, CHAR(), case, comment injection, null byte, SQL concat, XSS wrappers. 8 WAF fingerprints (Cloudflare, ModSec, Akamai, AWS, Imperva). Smart bypass ordered by effectiveness.</div><div class="cap-tags"><span class="cap-tag">Cloudflare</span><span class="cap-tag">ModSec</span><span class="cap-tag">30+ tech</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">03</div><div class="cap-title">FALSE POSITIVE REDUCER</div><div class="cap-desc">4-step pipeline: static evidence → fast paths → LLM reasoning (confidence 0.0–1.0) → optional live re-probe. Verdict: CONFIRMED / LIKELY / UNCERTAIN / FALSE_POSITIVE. Eliminate noise before reporting.</div><div class="cap-tags"><span class="cap-tag">LLM verify</span><span class="cap-tag">47 tests</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">04</div><div class="cap-title">SEVERITY REASONING</div><div class="cap-desc">Pure Python CVSS v3.1 calculator + LLM narrative. Every finding gets: vector string, metric breakdown, plain-English narrative, business impact, executive summary, remediation priority 0–100.</div><div class="cap-tags"><span class="cap-tag">CVSS v3.1</span><span class="cap-tag">43 tests</span></div></div>
           </div>
 
-          <!-- ── TAB 1: WEB ATTACK ── -->
-          <div class="caps-panel" data-panel="1" style="display:none">
-            <div class="cap-card-s"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">05</div><div class="cap-title">OPENAPI ATTACK PLANNER</div><div class="cap-desc">Read Swagger 2.0 / OpenAPI 3.x → auto attack matrix per endpoint: IDOR, SQLi, SSTI, XSS, AUTH_BYPASS, MASS_ASSIGN, BOLA, RATE_LIMIT. Static findings without hitting network.</div><div class="cap-tags"><span class="cap-tag">Swagger 2.0</span><span class="cap-tag">OpenAPI 3.x</span><span class="cap-tag">55 tests</span></div></div>
-            <div class="cap-card-s"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">06</div><div class="cap-title">gRPC FUZZER</div><div class="cap-desc">Reflection enumeration, payload injection via protobuf fields, metadata escalation (x-admin, x-role), bool flag flip, enum escalation, deadline bypass. Pure Python proto encoder — no .proto needed.</div><div class="cap-tags"><span class="cap-tag">Reflection</span><span class="cap-tag">ProtoEncoder</span><span class="cap-tag">49 tests</span></div></div>
-            <div class="cap-card-s"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">07</div><div class="cap-title">MFA BYPASS TESTER</div><div class="cap-desc">10 techniques: OTP brute, skip (null/empty body), type juggling (bool/int/null/array), backup code enum, remember-me abuse, OTP reuse, race condition (10 concurrent), long OTP truncation.</div><div class="cap-tags"><span class="cap-tag">OTP skip</span><span class="cap-tag">Type juggling</span><span class="cap-tag">55 tests</span></div></div>
-            <div class="cap-card-s"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">08</div><div class="cap-title">SUBDOMAIN TAKEOVER</div><div class="cap-desc">25+ cloud/SaaS fingerprints: AWS S3 (CVSS 9.8), Azure Blob, GitHub Pages, Heroku, Netlify, Vercel, Fastly, Shopify, Zendesk. Dangling CNAME, dead NS records, domain parking detection.</div><div class="cap-tags"><span class="cap-tag">25+ fingerprints</span><span class="cap-tag">40 tests</span></div></div>
-            <div class="cap-card-s"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">09</div><div class="cap-title">INJECTION SUITE</div><div class="cap-desc">XSS (reflected/stored/DOM), SQLi (error + time-based blind), SSRF (cloud metadata), SSTI (Jinja2/Twig/Smarty/Freemarker), XXE (file read + SSRF via XML), CORS (9 checks, CVSS 3.1–9.3).</div><div class="cap-tags"><span class="cap-tag">XSS·SQLi·SSRF</span><span class="cap-tag">SSTI·XXE·CORS</span></div></div>
-            <div class="cap-card-s"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">10</div><div class="cap-title">AUTH ATTACK SUITE</div><div class="cap-desc">JWT algorithm confusion (alg:none, RS→HS), weak secret detection, claim manipulation. OAuth state bypass, redirect_uri hijack. Session fixation, cookie entropy analysis, remember-me abuse.</div><div class="cap-tags"><span class="cap-tag">JWT</span><span class="cap-tag">OAuth</span><span class="cap-tag">Session</span></div></div>
-            <div class="cap-card-s"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">11</div><div class="cap-title">GRAPHQL + WEBSOCKET</div><div class="cap-desc">GraphQL: introspection, batch DoS, alias flooding, nested query depth, field injection. WebSocket: origin bypass, injection (SQLi/SSTI/CMDi), subprotocol abuse, rapid-fire rate limit detection.</div><div class="cap-tags"><span class="cap-tag">GraphQL</span><span class="cap-tag">WebSocket</span><span class="cap-tag">59 tests</span></div></div>
-            <div class="cap-card-s"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">12</div><div class="cap-title">BUSINESS LOGIC</div><div class="cap-desc">IDOR fuzzing (sequential ID, mass assignment). Price manipulation (negative, zero, overflow, discount abuse). Race condition — now supercharged with glitchrace nanosecond-precision goroutines.</div><div class="cap-tags"><span class="cap-tag">IDOR</span><span class="cap-tag">Price Manip</span><span class="cap-tag">Race</span></div></div>
+          <!-- TAB 1: WEB ATTACK -->
+          <div class="caps-panel" id="panel1" style="display:none">
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">05</div><div class="cap-title">OPENAPI ATTACK PLANNER</div><div class="cap-desc">Read Swagger 2.0 / OpenAPI 3.x → auto attack matrix per endpoint: IDOR, SQLi, SSTI, XSS, AUTH_BYPASS, MASS_ASSIGN, BOLA, RATE_LIMIT. Static findings without hitting network.</div><div class="cap-tags"><span class="cap-tag">Swagger 2.0</span><span class="cap-tag">55 tests</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">06</div><div class="cap-title">gRPC FUZZER</div><div class="cap-desc">Reflection enumeration, protobuf field injection, metadata escalation (x-admin/x-role), bool flag flip, enum escalation, deadline bypass. Pure Python proto encoder — no .proto schema needed.</div><div class="cap-tags"><span class="cap-tag">Reflection</span><span class="cap-tag">49 tests</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">07</div><div class="cap-title">MFA BYPASS TESTER</div><div class="cap-desc">10 techniques: OTP brute, skip (null/empty body), type juggling (bool/int/null/array), backup code enum, remember-me abuse, OTP reuse, race condition (10 concurrent), long OTP truncation.</div><div class="cap-tags"><span class="cap-tag">OTP skip</span><span class="cap-tag">55 tests</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">08</div><div class="cap-title">SUBDOMAIN TAKEOVER</div><div class="cap-desc">25+ cloud/SaaS fingerprints: AWS S3 (CVSS 9.8), Azure Blob, GitHub Pages, Heroku, Netlify, Vercel, Fastly. Dangling CNAME detection, dead NS records, domain parking.</div><div class="cap-tags"><span class="cap-tag">25+ prints</span><span class="cap-tag">40 tests</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">09</div><div class="cap-title">INJECTION SUITE</div><div class="cap-desc">XSS (reflected/stored/DOM), SQLi (error + time-based blind), SSRF (cloud metadata), SSTI (Jinja2/Twig/Smarty), XXE (file read + SSRF via XML), CORS (9 checks, CVSS 3.1–9.3).</div><div class="cap-tags"><span class="cap-tag">XSS·SQLi·SSRF</span><span class="cap-tag">SSTI·XXE·CORS</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">10</div><div class="cap-title">GRAPHQL + WEBSOCKET ADVANCED</div><div class="cap-desc">GraphQL: subscription abuse, introspect, batch DoS, alias flood, nested depth. WebSocket: binary frames, prototype pollution (__proto__), auth bypass (alg=none), oversized message handling.</div><div class="cap-tags"><span class="cap-tag">GraphQL Sub</span><span class="cap-tag">WS Binary</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">11</div><div class="cap-title">REST PARAMETER POLLUTION</div><div class="cap-desc">HTTP Parameter Pollution (duplicate params), mass assignment (role/admin accepted), type juggling (int/bool/null for string params), HTTP verb tampering (TRACE/PROPFIND), method override header bypass.</div><div class="cap-tags"><span class="cap-tag">HPP</span><span class="cap-tag">Mass Assign</span><span class="cap-tag">Verb Tamper</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">12</div><div class="cap-title">BUSINESS LOGIC + AUTH</div><div class="cap-desc">IDOR (sequential ID, mass assignment), price manipulation (negative/zero/overflow), JWT algorithm confusion (alg:none, RS→HS), OAuth state bypass, redirect_uri hijack, session fixation.</div><div class="cap-tags"><span class="cap-tag">IDOR</span><span class="cap-tag">JWT</span><span class="cap-tag">OAuth</span></div></div>
           </div>
 
-          <!-- ── TAB 2: GO BINARIES ── -->
-          <div class="caps-panel" data-panel="2" style="display:none">
-            <div class="cap-card-s cap-card-go"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num go-num">GO·01</div><div class="cap-title">GLITCHRACE</div><div class="cap-desc">Last-byte sync attack: goroutines held until all ready, released simultaneously at nanosecond precision. Exploits TOCTOU in coupon/token/rate-limit. 100x more precise than Python threads.</div><div class="cap-tags"><span class="cap-tag">ns precision</span><span class="cap-tag">100x faster</span><span class="cap-tag">Go 1.22</span></div></div>
-            <div class="cap-card-s cap-card-go"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num go-num">GO·02</div><div class="cap-title">GLITCHSCAN</div><div class="cap-desc">TCP connect scan via goroutine pool. 10k+ ports/sec. Banner grabbing, TLS cert extraction, HTTP title detection. 30 service fingerprints — Redis/MongoDB/Elasticsearch auto-flagged CRITICAL.</div><div class="cap-tags"><span class="cap-tag">10k+/sec</span><span class="cap-tag">Banner grab</span><span class="cap-tag">Auto-CVSS</span></div></div>
-            <div class="cap-card-s cap-card-go"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num go-num">GO·03</div><div class="cap-title">GLITCHFUZZ</div><div class="cap-desc">HTTP directory, parameter, and vhost fuzzing. Builtin wordlists (45 paths, 32 params). 100 concurrent goroutines default. Response analysis: status, size, words, lines. Baseline diff for param discovery.</div><div class="cap-tags"><span class="cap-tag">Dir·Param·Vhost</span><span class="cap-tag">50k+ req/sec</span></div></div>
-            <div class="cap-card-s cap-card-go"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num go-num">GO·04</div><div class="cap-title">GLITCHDNS</div><div class="cap-desc">Subdomain brute at 100k+ queries/sec. Wildcard detection + filtering. Zone transfer attempt (AXFR). NS/MX/TXT/A/CNAME enumeration. Sensitive keyword auto-detection → MEDIUM finding.</div><div class="cap-tags"><span class="cap-tag">100k+/sec</span><span class="cap-tag">AXFR</span><span class="cap-tag">Wildcard</span></div></div>
-            <div class="cap-card-s cap-card-go"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num go-num">GO·05</div><div class="cap-title">GLITCHTLS</div><div class="cap-desc">Protocol version detection (TLS 1.0–1.3). Cipher strength: STRONG/MEDIUM/WEAK/INSECURE. Cert analysis: expiry, SANs, self-signed, issuer. Hostname mismatch. HSTS max-age validation.</div><div class="cap-tags"><span class="cap-tag">Cipher audit</span><span class="cap-tag">Cert chain</span><span class="cap-tag">HSTS</span></div></div>
-            <div class="cap-card-s cap-card-go"><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num go-num">GO·06</div><div class="cap-title">GLITCHPROXY</div><div class="cap-desc">HTTP + HTTPS intercepting proxy. TLS MITM via ephemeral CA. Request/response logging to JSON. Auth token detection in headers. Missing security header analysis. Ctrl+C saves all findings.</div><div class="cap-tags"><span class="cap-tag">TLS MITM</span><span class="cap-tag">JSON log</span><span class="cap-tag">Auto-findings</span></div></div>
+          <!-- TAB 2: CLOUD & AUTH -->
+          <div class="caps-panel" id="panel2" style="display:none">
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">13</div><div class="cap-title">S3 / AZURE / GCP AUDIT</div><div class="cap-desc">AWS S3 public bucket listing (CVSS 9.8), object enumeration, XML listing parse. Azure Blob anonymous container access, SAS token detection. GCP storage allUsers listing. 19 domain-derived bucket name patterns.</div><div class="cap-tags"><span class="cap-tag">S3</span><span class="cap-tag">Azure</span><span class="cap-tag">GCP</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">14</div><div class="cap-title">CLOUD METADATA SSRF</div><div class="cap-desc">6 IMDS endpoints: AWS IMDSv1 (IAM creds), AWS ECS, Azure IMDS, GCP Compute v1 (SA token), DigitalOcean. Direct accessibility + SSRF probe via target parameter injection. Response indicator detection per provider.</div><div class="cap-tags"><span class="cap-tag">AWS IAM</span><span class="cap-tag">Azure IMDS</span><span class="cap-tag">GCP SA</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">15</div><div class="cap-title">SAML BYPASS TESTER</div><div class="cap-desc">XXE via DOCTYPE (file read + SSRF to metadata), unsigned assertion acceptance (signature validation missing), XML Signature Wrapping (XSW), assertion replay (expired NotOnOrAfter), NameID injection, role attribute manipulation.</div><div class="cap-tags"><span class="cap-tag">XXE</span><span class="cap-tag">XSW</span><span class="cap-tag">Replay</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">16</div><div class="cap-title">PKCE BYPASS TESTER</div><div class="cap-desc">OAuth 2.1 PKCE: downgrade (plain method accepted), PKCE entirely optional (can be omitted), invalid method accepted (none/md5/sha1), state parameter CSRF, weak code_verifier (< 43 chars per RFC 7636).</div><div class="cap-tags"><span class="cap-tag">OAuth 2.1</span><span class="cap-tag">PKCE</span><span class="cap-tag">CSRF</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">17</div><div class="cap-title">SSO TESTER</div><div class="cap-desc">redirect_uri open redirect bypass (8 patterns including @evil.com, fragment injection), OIDC discovery misconfiguration (none/HS256 alg, implicit grant), logout session invalidation, id_token alg=none (CRITICAL).</div><div class="cap-tags"><span class="cap-tag">redirect_uri</span><span class="cap-tag">OIDC</span><span class="cap-tag">alg=none</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">18</div><div class="cap-title">API KEY AUDITOR</div><div class="cap-desc">10 key patterns: AWS, GitHub, Stripe, SendGrid, Slack, Google, JWT, Generic. Shannon entropy check (< 3.5 bits/char flagged). Key in URL parameter (logged by proxies). Scope validation, detect_keys_in_text() for log scanning.</div><div class="cap-tags"><span class="cap-tag">Entropy</span><span class="cap-tag">10 patterns</span><span class="cap-tag">Log scan</span></div></div>
+          </div>
+
+          <!-- TAB 3: GO BINARIES -->
+          <div class="caps-panel" id="panel3" style="display:none">
+            <div class="cap-card-s cap-card-go" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num go-num">GO·01</div><div class="cap-title">GLITCHRACE</div><div class="cap-desc">Last-byte sync attack: goroutines held until all ready, fired simultaneously at nanosecond precision. Exploits TOCTOU in coupon/token/rate-limit checks. 100x more precise than Python threads. HTTP/2 compatible.</div><div class="cap-tags"><span class="cap-tag">ns precision</span><span class="cap-tag">100x faster</span></div></div>
+            <div class="cap-card-s cap-card-go" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num go-num">GO·02</div><div class="cap-title">GLITCHSCAN</div><div class="cap-desc">TCP connect scan via goroutine pool. 10k+ ports/sec. Banner grabbing, TLS cert extraction, HTTP title detection. 30 service fingerprints — Redis/MongoDB/Elasticsearch auto-flagged CRITICAL. Auto-finding generation.</div><div class="cap-tags"><span class="cap-tag">10k+/sec</span><span class="cap-tag">Banner grab</span></div></div>
+            <div class="cap-card-s cap-card-go" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num go-num">GO·03</div><div class="cap-title">GLITCHFUZZ</div><div class="cap-desc">HTTP directory, parameter, and vhost fuzzing. Builtin wordlists (45 paths, 32 params). 100 concurrent goroutines. Response analysis: status, size, words, lines. Baseline diff for param discovery.</div><div class="cap-tags"><span class="cap-tag">Dir·Param·Vhost</span><span class="cap-tag">50k+ req/s</span></div></div>
+            <div class="cap-card-s cap-card-go" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num go-num">GO·04</div><div class="cap-title">GLITCHDNS</div><div class="cap-desc">Subdomain brute at 100k+ queries/sec. Wildcard detection + filtering. Zone transfer (AXFR). NS/MX/TXT/A/CNAME enumeration. Sensitive keyword auto-detection (admin/test/dev) → MEDIUM finding.</div><div class="cap-tags"><span class="cap-tag">100k+/sec</span><span class="cap-tag">AXFR</span></div></div>
+            <div class="cap-card-s cap-card-go" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num go-num">GO·05</div><div class="cap-title">GLITCHTLS</div><div class="cap-desc">Protocol version detection (TLS 1.0–1.3). Cipher strength: STRONG/MEDIUM/WEAK/INSECURE. Cert analysis: expiry, SANs, self-signed, issuer. Hostname mismatch. HSTS max-age validation. Deprecated protocol findings.</div><div class="cap-tags"><span class="cap-tag">Cipher audit</span><span class="cap-tag">Cert chain</span></div></div>
+            <div class="cap-card-s cap-card-go" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num go-num">GO·06</div><div class="cap-title">GLITCHPROXY</div><div class="cap-desc">HTTP + HTTPS intercepting proxy. TLS MITM via ephemeral CA certificate. Request/response JSON logging. Auth token detection in headers. Missing security header analysis. Ctrl+C saves all findings.</div><div class="cap-tags"><span class="cap-tag">TLS MITM</span><span class="cap-tag">JSON log</span></div></div>
+          </div>
+
+          <!-- TAB 4: PLATFORM -->
+          <div class="caps-panel" id="panel4" style="display:none">
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">19</div><div class="cap-title">WEB DASHBOARD</div><div class="cap-desc">FastAPI + Server-Sent Events real-time scan interface. Dark-themed HTML, live finding stream with severity counters, scan history (last 20 sessions), progress bar. Start scans from browser, watch findings arrive instantly.</div><div class="cap-tags"><span class="cap-tag">FastAPI</span><span class="cap-tag">SSE</span><span class="cap-tag">Real-time</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">20</div><div class="cap-title">MULTI-TARGET ORCHESTRATOR</div><div class="cap-desc">Concurrent scanning of multiple targets simultaneously. Tag-based target filtering (api/web/fintech). Per-target risk level, finding aggregation, top_targets() ranking. JSON combined report. asyncio.Semaphore concurrency control.</div><div class="cap-tags"><span class="cap-tag">Concurrent</span><span class="cap-tag">Tag filter</span><span class="cap-tag">Aggregation</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">21</div><div class="cap-title">ASYNC HTTP ENGINE</div><div class="cap-desc">Token bucket rate limiter (req/sec), exponential backoff retry with jitter (429/5xx), in-memory TTL response cache, httpx AsyncClient connection pooling, semaphore concurrency, batch_get() for concurrent URL fetching.</div><div class="cap-tags"><span class="cap-tag">Rate limit</span><span class="cap-tag">Retry</span><span class="cap-tag">Cache</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">22</div><div class="cap-title">PDF + EXECUTIVE REPORT</div><div class="cap-desc">PDF via reportlab: cover page, executive summary, CVSS table, per-finding pages with evidence code blocks. HTML dashboard: self-contained, Chart.js severity donut + CVSS bar chart, expandable finding cards, print-to-PDF ready.</div><div class="cap-tags"><span class="cap-tag">PDF</span><span class="cap-tag">Chart.js</span><span class="cap-tag">reportlab</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">23</div><div class="cap-title">REMEDIATION TRACKER</div><div class="cap-desc">Persistent JSON remediation tracking. 6 statuses: OPEN → IN_PROGRESS → FIXED → ACCEPTED_RISK → WONT_FIX → NEEDS_RETEST. Assignee, due date, note history. Completion %, overdue detection, rich summary table.</div><div class="cap-tags"><span class="cap-tag">6 statuses</span><span class="cap-tag">Due dates</span><span class="cap-tag">Persistent</span></div></div>
+            <div class="cap-card-s" data-reveal><div class="bkt bkt-tl"></div><div class="bkt bkt-tr"></div><div class="cap-num">24</div><div class="cap-title">INTEGRATION LAYER</div><div class="cap-desc">Burp Suite XML export (severity + CWE mapping). Slack Block Kit notifications (critical/summary/single). Discord rich embeds. Jira REST API v3 auto-ticket creation. SARIF 2.1.0 for GitHub Code Scanning upload.</div><div class="cap-tags"><span class="cap-tag">Burp</span><span class="cap-tag">Slack/Jira</span><span class="cap-tag">SARIF</span></div></div>
           </div>
 
         </div>
       </div>
-      <button class="slider-btn slider-next" id="sliderNext" aria-label="Next">›</button>
+      <button class="slider-btn" id="sliderNext" aria-label="Next">&#8250;</button>
     </div>
 
-    <!-- Dots -->
     <div class="slider-dots" id="sliderDots"></div>
-
   </div>
 </section>
 <div class="glitch-divider"></div>
@@ -211,10 +215,12 @@
   <div class="stack-inner">
     <div data-reveal><div class="section-tag">ENGINEERING</div><h2 class="section-title">TECH<br><span style="color:var(--purple-bright)">STACK</span></h2></div>
     <div class="stack-grid">
-      <div class="stack-item" data-reveal><div class="stack-lang">Python 3.10+</div><div class="stack-role">INTELLIGENCE + ORCHESTRATION</div><div class="stack-libs">LLM Mutation · FP Reducer · CVSS Engine · WAF Evasion · 748 unit tests · pip install glitchicons · 15 CLI commands</div></div>
+      <div class="stack-item" data-reveal><div class="stack-lang">Python 3.10+</div><div class="stack-role">INTELLIGENCE + ORCHESTRATION</div><div class="stack-libs">1083 unit tests · LLM Mutation · FP Reducer · CVSS v3.1 · WAF Evasion · AsyncEngine · pip install glitchicons</div></div>
       <div class="stack-item" data-reveal><div class="stack-lang">Go 1.22</div><div class="stack-role">PERFORMANCE BINARY LAYER</div><div class="stack-libs">glitchrace · glitchscan · glitchfuzz · glitchdns · glitchtls · glitchproxy · goroutines · crypto/tls</div></div>
-      <div class="stack-item" data-reveal><div class="stack-lang">LLM APIs</div><div class="stack-role">INTELLIGENCE LAYER</div><div class="stack-libs">Ollama + Qwen2.5-Coder (local) · Anthropic Claude API · OpenAI — mutation, FP reduction, CVSS narration, payload generation</div></div>
-      <div class="stack-item" data-reveal><div class="stack-lang">Integrations</div><div class="stack-role">WORKFLOW LAYER</div><div class="stack-libs">Burp Suite XML · Slack Block Kit · Discord Embeds · Jira REST API v3 · SARIF 2.1.0 · GitHub Code Scanning</div></div>
+      <div class="stack-item" data-reveal><div class="stack-lang">FastAPI + SSE</div><div class="stack-role">WEB DASHBOARD</div><div class="stack-libs">Real-time scan UI · Server-Sent Events · Scan history · Multi-target orchestration · uvicorn</div></div>
+      <div class="stack-item" data-reveal><div class="stack-lang">LLM APIs</div><div class="stack-role">INTELLIGENCE LAYER</div><div class="stack-libs">Ollama + Qwen2.5-Coder (local) · Anthropic Claude · OpenAI — mutation, FP reduction, CVSS narration</div></div>
+      <div class="stack-item" data-reveal><div class="stack-lang">Integrations</div><div class="stack-role">WORKFLOW LAYER</div><div class="stack-libs">Burp Suite XML · Slack Block Kit · Discord Embeds · Jira REST API v3 · SARIF 2.1.0 · PDF (reportlab)</div></div>
+      <div class="stack-item" data-reveal><div class="stack-lang">CI/CD</div><div class="stack-role">DELIVERY LAYER</div><div class="stack-libs">GitHub Actions (3 OS × 3 Python × 6 Go modules × 3 platforms) · Docker multi-stage · ruff · bandit</div></div>
     </div>
   </div>
 </section>
@@ -228,14 +234,14 @@
       <div class="arch-row">
         <div class="arch-box"><div class="arch-box-title">WEB APP / API</div><div class="arch-box-sub">OpenAPI · gRPC · REST</div></div>
         <div class="arch-arrow">→</div>
-        <div class="arch-box"><div class="arch-box-title">BINARY TARGET</div><div class="arch-box-sub">AFL++ · ASAN · GDB</div></div>
+        <div class="arch-box"><div class="arch-box-title">CLOUD INFRA</div><div class="arch-box-sub">S3 · Azure · GCP · IMDS</div></div>
         <div class="arch-arrow">→</div>
-        <div class="arch-box"><div class="arch-box-title">NETWORK / DNS</div><div class="arch-box-sub">Port · TLS · DNS</div></div>
+        <div class="arch-box"><div class="arch-box-title">AUTH LAYER</div><div class="arch-box-sub">SAML · PKCE · SSO · Keys</div></div>
       </div>
       <div class="arch-arrow-v">↓</div>
       <div class="arch-central">
-        <img src="glitchicons.png" class="arch-central-logo" alt="GLITCHICONS architecture" loading="lazy" decoding="async">
-        <div><div class="arch-central-title">GLITCHICONS SIEGE CORE</div><div class="arch-central-sub">17 PYTHON MODULES + 6 GO BINARIES + LLM INTELLIGENCE</div></div>
+        <img src="glitchicons.png" class="arch-central-logo" alt="GLITCHICONS" loading="lazy" decoding="async">
+        <div><div class="arch-central-title">GLITCHICONS v2.0.0 SIEGE CORE</div><div class="arch-central-sub">28 MODULES · 6 GO BINARIES · LLM · ASYNC · MULTI-TARGET</div></div>
       </div>
       <div class="arch-arrow-v">↓</div>
       <div class="arch-row">
@@ -247,7 +253,7 @@
       </div>
       <div class="arch-arrow-v">↓</div>
       <div class="arch-row">
-        <div class="arch-box"><div class="arch-box-title">CVSS REPORT</div><div class="arch-box-sub">v3.1 · LLM Narrated</div></div>
+        <div class="arch-box"><div class="arch-box-title">WEB DASHBOARD</div><div class="arch-box-sub">FastAPI · SSE · Live</div></div>
         <div class="arch-arrow">→</div>
         <div class="arch-box"><div class="arch-box-title">INTEGRATIONS</div><div class="arch-box-sub">Burp · Slack · Jira · SARIF</div></div>
         <div class="arch-arrow">→</div>
@@ -264,30 +270,31 @@
     <div data-reveal>
       <div class="section-tag">OPEN SOURCE</div>
       <h2 class="section-title">JOIN THE<br><span style="color:var(--purple-bright)">SIEGE</span></h2>
-      <p class="section-desc">Glitchicons is community-forged. 748 tests. Plugin system ready. Every contributor strengthens the collective intelligence.</p>
+      <p class="section-desc">Glitchicons is community-forged. 1083 tests. Plugin system ready. Every contributor strengthens the collective intelligence.</p>
       <div class="steps">
         <div class="step"><div class="step-num">01</div><div class="step-body"><strong>Fork the repository</strong><span>Star + Fork on GitHub. Read CONTRIBUTING.md. Check open issues labeled <code style="font-family:'Share Tech Mono';color:var(--purple-bright)">good-first-issue</code>.</span></div></div>
         <div class="step"><div class="step-num">02</div><div class="step-body"><strong>Build a plugin</strong><span>Implement <code style="font-family:'Share Tech Mono';color:var(--purple-bright)">GlitchiconPlugin</code> ABC. Publish to PyPI as <code style="font-family:'Share Tech Mono';color:var(--purple-bright)">glitchicons-yourname</code>. Auto-discovered on install.</span></div></div>
-        <div class="step"><div class="step-num">03</div><div class="step-body"><strong>Submit a Pull Request</strong><span>All PRs reviewed within 72h. Passing CI + test coverage required. LF line endings preferred.</span></div></div>
+        <div class="step"><div class="step-num">03</div><div class="step-body"><strong>Submit a Pull Request</strong><span>All PRs reviewed within 72h. Passing CI + test coverage required.</span></div></div>
         <div class="step"><div class="step-num">04</div><div class="step-body"><strong>Join our Discord</strong><span>Real-time collaboration. Weekly research sessions and code reviews.</span></div></div>
       </div>
     </div>
     <div data-reveal>
       <div class="code-block">
-        <span class="cl"><span class="cc"># Install Glitchicons</span></span>
-        <span class="cl"><span class="cp">$ </span><span class="cm">pip install "glitchicons[all]"</span></span>
+        <span class="cl"><span class="cc"># Install Glitchicons v2.0.0</span></span>
+        <span class="cl"><span class="cp">$ </span><span class="cm">pip install "glitchicons[all]" fastapi uvicorn</span></span>
         <span class="cl"><span class="cp">$ </span><span class="cm">glitchicons status</span></span>
         <span class="cl">&nbsp;</span>
-        <span class="cl"><span class="cc"># Build Go binaries</span></span>
-        <span class="cl"><span class="cp">$ </span><span class="cm">cd glitchrace && go build -o ../bin/glitchrace .</span></span>
-        <span class="cl"><span class="cp">$ </span><span class="cm">cd glitchscan && go build -o ../bin/glitchscan .</span></span>
+        <span class="cl"><span class="cc"># Web Dashboard (NEW v2.0.0)</span></span>
+        <span class="cl"><span class="cp">$ </span><span class="cm">glitchicons dashboard --port 8888</span></span>
+        <span class="cl"><span class="cc"># → http://localhost:8888</span></span>
         <span class="cl">&nbsp;</span>
-        <span class="cl"><span class="cc"># Run intelligence pipeline</span></span>
-        <span class="cl"><span class="cp">$ </span><span class="cm">glitchicons openapi --spec api.yaml --base-url https://target.com</span></span>
-        <span class="cl"><span class="cp">$ </span><span class="cm">glitchicons mutate --url https://target.com/search --param q --payload "' OR '1'='1"</span></span>
-        <span class="cl"><span class="cp">$ </span><span class="cm">glitchicons verify --input ./findings/raw.json</span></span>
+        <span class="cl"><span class="cc"># Multi-target scan (NEW v2.0.0)</span></span>
+        <span class="cl"><span class="cp">$ </span><span class="cm">glitchicons siege --targets targets.txt --concurrency 3</span></span>
+        <span class="cl">&nbsp;</span>
+        <span class="cl"><span class="cc"># Intelligence pipeline</span></span>
+        <span class="cl"><span class="cp">$ </span><span class="cm">glitchicons mutate --url https://target.com/api --param q --payload "' OR 1=1"</span></span>
         <span class="cl"><span class="cp">$ </span><span class="cm">glitchicons evade "&lt;script&gt;alert(1)&lt;/script&gt;" --waf Cloudflare</span></span>
-        <span class="cl" style="color:var(--purple-bright)">[⬡] GLITCHICONS v1.3.0 — 17 MODULES + 6 GO BINARIES — SIEGE COMMENCING</span>
+        <span class="cl" style="color:var(--purple-bright)">[⬡] GLITCHICONS v2.0.0 — 28 MODULES + 6 GO BINARIES — SIEGE COMMENCING</span>
       </div>
       <div class="ranks">
         <div class="ranks-title">CONTRIBUTOR RANKS</div>
@@ -311,32 +318,25 @@
       <h2 class="section-title">DEPLOY<br><span style="color:var(--purple-bright)">GLITCHICONS</span></h2>
       <p class="section-desc">Built to be used — not just starred. Available as an open-source toolkit and as a professional AI-powered penetration testing service.</p>
     </div>
-
     <div class="services-wrap">
       <div class="services-hero" data-reveal>
         <div class="services-hero-grid">
           <div>
             <div class="svc-eyebrow">◈ PROFESSIONAL SERVICE</div>
             <h3 class="svc-h">AI-Powered Pentest<br><span>for Startups &amp; Fintech</span></h3>
-            <p class="svc-body">
-              You need a security assessment that goes <strong>beyond a checklist</strong>.
-              Glitchicons runs AI-driven mutation, WAF evasion, and adaptive fuzzing to surface vulnerabilities
-              that conventional scanners miss — delivering reports your engineering team can act on immediately.
-            </p>
+            <p class="svc-body">You need a security assessment that goes <strong>beyond a checklist</strong>. Glitchicons runs AI-driven mutation, WAF evasion, cloud auditing, SAML/PKCE/SSO bypass, and adaptive fuzzing — delivering reports your engineering team can act on immediately.</p>
             <div class="svc-proof">
-              <div><span class="proof-num">748</span><span class="proof-lbl">Unit Tests</span></div>
+              <div><span class="proof-num">1083</span><span class="proof-lbl">Unit Tests</span></div>
               <div><span class="proof-num">6</span><span class="proof-lbl">Go Binaries</span></div>
-              <div><span class="proof-num">17</span><span class="proof-lbl">Attack Modules</span></div>
+              <div><span class="proof-num">28</span><span class="proof-lbl">Attack Modules</span></div>
             </div>
             <div class="svc-ctas">
               <a href="mailto:ardanov96@gmail.com" class="btn-primary">⬡ DISCUSS YOUR NEEDS</a>
               <a href="https://github.com/ardanov96/glitchicons" class="btn-secondary">› VIEW ON GITHUB</a>
             </div>
           </div>
-
           <div class="pkg-panel">
             <span class="pkg-panel-label">SERVICE PACKAGES</span>
-
             <div class="pkg">
               <div class="pkg-name">BASIC ASSESSMENT <span class="pkg-pill green">POPULAR</span></div>
               <div class="pkg-desc">1 web app / API · fuzzing + manual review · PDF report</div>
@@ -345,16 +345,14 @@
                 <div class="price-idr" style="display:none"><span class="pkg-price">Rp 5–8jt</span><span class="pkg-price-sub">/ ~5 hari kerja</span></div>
               </div>
             </div>
-
             <div class="pkg">
               <div class="pkg-name">DEEP SIEGE <span class="pkg-pill gold">RECOMMENDED</span></div>
-              <div class="pkg-desc">Full stack · API + backend + infra · AI fuzzing + exploit PoC</div>
+              <div class="pkg-desc">Full stack · API + backend + infra + cloud · AI fuzzing + exploit PoC</div>
               <div class="pkg-price-wrap">
                 <div class="price-usd"><span class="pkg-price">$750–1,200</span><span class="pkg-price-sub">/ ~10 working days</span></div>
                 <div class="price-idr" style="display:none"><span class="pkg-price">Rp 12–20jt</span><span class="pkg-price-sub">/ ~10 hari kerja</span></div>
               </div>
             </div>
-
             <div class="pkg">
               <div class="pkg-name">MONTHLY RETAINER</div>
               <div class="pkg-desc">Ongoing scans, patch review, on-call security advisory</div>
@@ -363,20 +361,18 @@
                 <div class="price-idr" style="display:none"><span class="pkg-price">Rp 8–15jt</span><span class="pkg-price-sub">/ bulan · min. 3 bulan</span></div>
               </div>
             </div>
-
             <div class="pkg-cta-wrap">
               <a href="mailto:ardanov96@gmail.com" class="btn-primary" style="display:block;text-align:center;padding:.75rem">⬡ REQUEST A QUOTE</a>
             </div>
           </div>
         </div>
       </div>
-
       <div class="svc-secondary">
         <div class="svc-card" data-reveal>
           <span class="svc-card-icon">🎓</span>
           <div class="svc-card-tag">FOR SECURITY RESEARCHERS</div>
           <div class="svc-card-title">WORKSHOP &amp; TRAINING</div>
-          <div class="svc-card-desc">Learn AI-powered fuzzing directly from the engineer who built it. From setup to your first CVE — covering LLM mutation, WAF evasion, and Go binary integration. Online &amp; in-person.</div>
+          <div class="svc-card-desc">From setup to your first CVE — LLM mutation, WAF evasion, cloud audit, SAML/PKCE bypass, and Go binary integration. Online &amp; in-person.</div>
           <div class="svc-card-price">
             <span class="price-usd">$30–120 / attendee · Schedule: TBA</span>
             <span class="price-idr" style="display:none">Rp 500rb–2jt / peserta · Schedule: TBA</span>
@@ -387,7 +383,7 @@
           <span class="svc-card-icon">⬡</span>
           <div class="svc-card-tag">FOR CONTRIBUTORS</div>
           <div class="svc-card-title">OPEN SOURCE · MIT LICENSE</div>
-          <div class="svc-card-desc">Free for individuals and research. Fork, extend, build plugins. 748 tests as foundation. Commercial license available for enterprise CI/CD pipeline integration.</div>
+          <div class="svc-card-desc">Free for individuals and research. Fork, extend, build plugins. 1083 tests as foundation. Commercial license available for enterprise CI/CD pipeline integration.</div>
           <div class="svc-card-price">
             <span class="price-usd">Free for research · Enterprise: $120–300 / seat / yr</span>
             <span class="price-idr" style="display:none">Free for research · Enterprise: Rp 2–5jt / seat / tahun</span>
@@ -434,303 +430,29 @@
 </footer>
 
 <script>
-// LOADING SCREEN
-window.addEventListener('load', function() {
-  const bar = document.getElementById('loadBar');
-  const screen = document.getElementById('loadingScreen');
-  bar.style.width = '100%';
-  setTimeout(function() { screen.classList.add('done'); }, 400);
-});
-
-document.getElementById('copyrightYear').textContent = '© ' + new Date().getFullYear();
-
-// Ticks on emblem
-const tc = document.getElementById('ticksContainer');
-if(tc) for(let i=0;i<24;i++) {
-  const t = document.createElement('div'); t.className = 'tick';
-  t.style.transform = `rotate(${(i/24)*360}deg) translateX(150px)`;
-  t.style.width = i%6===0 ? '16px' : '8px';
-  t.style.opacity = i%6===0 ? '0.6' : '0.2';
-  tc.appendChild(t);
-}
-
-// Cursor
-const dot = document.getElementById('cursorDot');
-const ring = document.getElementById('cursorRing');
-document.addEventListener('mousemove', function(e) {
-  dot.style.left = e.clientX + 'px'; dot.style.top = e.clientY + 'px';
-  setTimeout(function() { ring.style.left = e.clientX + 'px'; ring.style.top = e.clientY + 'px'; }, 80);
-});
-document.addEventListener('click', function(e) {
-  for(let i=0;i<10;i++) {
-    const s = document.createElement('div'); s.className = 'spark';
-    const a = (i/10)*Math.PI*2, d = 25+Math.random()*45;
-    s.style.left = e.clientX+'px'; s.style.top = e.clientY+'px';
-    s.style.setProperty('--dx', Math.cos(a)*d+'px');
-    s.style.setProperty('--dy', Math.sin(a)*d+'px');
-    s.style.background = Math.random()>.5 ? '#A855F7' : '#BF00FF';
-    document.body.appendChild(s); setTimeout(function() { s.remove(); }, 800);
-  }
-});
-
-// SCROLL REVEAL
-const revealObs = new IntersectionObserver(function(entries) {
-  entries.forEach(function(e) { if(e.isIntersecting) e.target.classList.add('revealed'); });
-}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-document.querySelectorAll('[data-reveal]').forEach(function(el) { revealObs.observe(el); });
-
-// COUNTERS
-const counters = document.querySelectorAll('[data-count]');
-let countersDone = false;
-const counterObs = new IntersectionObserver(function(entries) {
-  entries.forEach(function(e) {
-    if(e.isIntersecting && !countersDone) {
-      countersDone = true;
-      counters.forEach(function(el) {
-        const target = parseInt(el.dataset.count);
-        let v = 0;
-        const interval = setInterval(function() {
-          v += target/80;
-          if(v >= target) { el.textContent = target+'+'; clearInterval(interval); }
-          else el.textContent = Math.floor(v);
-        }, 20);
-      });
-    }
-  });
-}, { threshold: 0.5 });
-if(counters.length) counterObs.observe(counters[0]);
-
-// NAV GLITCH
-const nl = document.querySelector('.nav-logo');
-setInterval(function() {
-  nl.style.textShadow = '2px 0 #FF0040,-2px 0 #00E5FF';
-  setTimeout(function() { nl.style.textShadow = 'none'; }, 120);
-}, 5000);
+window.addEventListener('load',function(){var bar=document.getElementById('loadBar'),screen=document.getElementById('loadingScreen');bar.style.width='100%';setTimeout(function(){screen.classList.add('done');},400);});
+document.getElementById('copyrightYear').textContent='© '+new Date().getFullYear();
+const tc=document.getElementById('ticksContainer');
+if(tc)for(let i=0;i<24;i++){const t=document.createElement('div');t.className='tick';t.style.transform='rotate('+(i/24*360)+'deg) translateX(150px)';t.style.width=i%6===0?'16px':'8px';t.style.opacity=i%6===0?'0.6':'0.2';tc.appendChild(t);}
+const dot=document.getElementById('cursorDot'),ring=document.getElementById('cursorRing');
+document.addEventListener('mousemove',function(e){dot.style.left=e.clientX+'px';dot.style.top=e.clientY+'px';setTimeout(function(){ring.style.left=e.clientX+'px';ring.style.top=e.clientY+'px';},80);});
+document.addEventListener('click',function(e){for(let i=0;i<10;i++){const s=document.createElement('div');s.className='spark';const a=(i/10)*Math.PI*2,d=25+Math.random()*45;s.style.left=e.clientX+'px';s.style.top=e.clientY+'px';s.style.setProperty('--dx',Math.cos(a)*d+'px');s.style.setProperty('--dy',Math.sin(a)*d+'px');s.style.background=Math.random()>.5?'#A855F7':'#BF00FF';document.body.appendChild(s);setTimeout(function(){s.remove();},800);}});
+const revealObs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('revealed');});},{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('[data-reveal]').forEach(function(el){revealObs.observe(el);});
+const counters=document.querySelectorAll('[data-count]');let countersDone=false;
+const counterObs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting&&!countersDone){countersDone=true;counters.forEach(function(el){const target=parseInt(el.dataset.count);let v=0;const interval=setInterval(function(){v+=target/80;if(v>=target){el.textContent=target+'+';clearInterval(interval);}else el.textContent=Math.floor(v);},20);});}});},{threshold:0.5});
+if(counters.length)counterObs.observe(counters[0]);
+const nl=document.querySelector('.nav-logo');
+setInterval(function(){nl.style.textShadow='2px 0 #FF0040,-2px 0 #00E5FF';setTimeout(function(){nl.style.textShadow='none';},120);},5000);
 
 // ATTACK CANVAS
-(function() {
-  const canvas = document.getElementById('attackCanvas');
-  if(!canvas) return;
-  const ctx = canvas.getContext('2d');
-  let W, H, nodes=[], edges=[], packets=[], impacts=[], phase=0, phaseTimer=180, raf=null, visible=false;
-
-  const NF=[{fx:.06,fy:.17},{fx:.09,fy:.45},{fx:.06,fy:.73},{fx:.13,fy:.90},
-            {fx:.88,fy:.13},{fx:.92,fy:.42},{fx:.87,fy:.69},{fx:.82,fy:.88},
-            {fx:.28,fy:.08},{fx:.52,fy:.05},{fx:.74,fy:.09},
-            {fx:.22,fy:.91},{fx:.52,fy:.94},{fx:.80,fy:.91}];
-  const EF=[[9,8],[9,10],[8,0],[8,1],[8,2],[10,4],[10,5],[10,6],
-            [0,1],[1,2],[2,3],[4,5],[5,6],[6,7],[0,4],[3,11],[7,13],[11,12],[12,13],[1,5],[2,6]];
-  const ST={IDLE:0,TARGETED:1,BREACHED:2,CRASHED:3,RECOVERING:4};
-
-  function resize() {
-    const h = document.getElementById('hero');
-    W = canvas.width = h.offsetWidth || window.innerWidth;
-    H = canvas.height = h.offsetHeight || window.innerHeight;
-    build();
-  }
-  function build() {
-    nodes = NF.map(function(d,i) { return {id:i,x:d.fx*W,y:d.fy*H,state:ST.IDLE,r:i===9?11:8,pulse:Math.random()*Math.PI*2,glitch:0}; });
-    edges = EF.map(function(e) { return {a:e[0],b:e[1],dp:Math.random(),ds:.002+Math.random()*.002,attack:false}; });
-    packets=[]; impacts=[]; phase=0; phaseTimer=180;
-  }
-  function hex(x,y,r) {
-    ctx.beginPath();
-    for(let i=0;i<6;i++) { const a=(Math.PI/3)*i-Math.PI/6; i?ctx.lineTo(x+r*Math.cos(a),y+r*Math.sin(a)):ctx.moveTo(x+r*Math.cos(a),y+r*Math.sin(a)); }
-    ctx.closePath();
-  }
-  function infect(id,delay) {
-    setTimeout(function() {
-      if(!nodes[id]) return;
-      nodes[id].state=ST.BREACHED; nodes[id].glitch=1;
-      impacts.push({x:nodes[id].x,y:nodes[id].y,r:4,a:1});
-      edges.forEach(function(e) {
-        if(e.a===id||e.b===id) {
-          e.attack=true;
-          packets.push({from:e.a===id?e.a:e.b,to:e.a===id?e.b:e.a,t:0});
-        }
-      });
-    }, delay);
-  }
-  function startAttack() {
-    infect(9,0);infect(8,700);infect(10,800);
-    infect(0,1600);infect(1,1900);infect(4,1800);infect(5,2200);
-    infect(2,2900);infect(6,3200);infect(3,3900);infect(7,4300);
-    setTimeout(function(){nodes[0].state=ST.CRASHED;nodes[8].state=ST.CRASHED;},5200);
-    setTimeout(function(){nodes[2].state=ST.CRASHED;nodes[5].state=ST.CRASHED;},5900);
-    setTimeout(recover,8500);
-  }
-  function recover() {
-    nodes.forEach(function(n,i) {
-      setTimeout(function() {
-        n.state=ST.RECOVERING;
-        setTimeout(function(){n.state=ST.IDLE;n.glitch=0;},1200+Math.random()*800);
-      },i*180);
-    });
-    edges.forEach(function(e){e.attack=false;});
-    setTimeout(function(){packets=[];phase=0;phaseTimer=220;},4000);
-  }
-  function update() {
-    phaseTimer--;
-    if(phaseTimer<=0&&phase===0){phase=1;startAttack();phaseTimer=99999;}
-    nodes.forEach(function(n){n.pulse+=.02;if(n.glitch>0)n.glitch=Math.max(0,n.glitch-.018);});
-    edges.forEach(function(e){e.dp=(e.dp+e.ds)%1;});
-    packets=packets.filter(function(p){p.t+=.022;return p.t<1;});
-    impacts=impacts.filter(function(i){i.r+=2.5;i.a-=.055;return i.a>0;});
-  }
-  function draw() {
-    ctx.clearRect(0,0,W,H);
-    edges.forEach(function(e) {
-      const na=nodes[e.a],nb=nodes[e.b]; if(!na||!nb) return;
-      const atk=e.attack||na.state===ST.BREACHED||nb.state===ST.BREACHED;
-      ctx.save();
-      ctx.strokeStyle=atk?'rgba(255,0,64,.3)':'rgba(107,0,255,.18)';
-      ctx.lineWidth=atk?1:.6;
-      if(!atk) ctx.setLineDash([4,8]);
-      ctx.beginPath();ctx.moveTo(na.x,na.y);ctx.lineTo(nb.x,nb.y);ctx.stroke();
-      ctx.setLineDash([]);
-      const fx=na.x+(nb.x-na.x)*e.dp,fy=na.y+(nb.y-na.y)*e.dp;
-      ctx.beginPath();ctx.arc(fx,fy,atk?1.8:1.2,0,Math.PI*2);
-      ctx.fillStyle=atk?'rgba(255,0,64,.65)':'rgba(168,85,247,.45)';ctx.fill();
-      ctx.restore();
-    });
-    packets.forEach(function(p) {
-      const na=nodes[p.from],nb=nodes[p.to]; if(!na||!nb) return;
-      const x=na.x+(nb.x-na.x)*p.t,y=na.y+(nb.y-na.y)*p.t;
-      ctx.save();ctx.shadowColor='#FF0040';ctx.shadowBlur=10;
-      ctx.beginPath();ctx.arc(x,y,3,0,Math.PI*2);ctx.fillStyle='rgba(255,80,0,.9)';ctx.fill();ctx.restore();
-    });
-    impacts.forEach(function(i) {
-      ctx.save();ctx.beginPath();ctx.arc(i.x,i.y,i.r,0,Math.PI*2);
-      ctx.strokeStyle='rgba(255,0,64,'+i.a+')';ctx.lineWidth=1.5;ctx.stroke();ctx.restore();
-    });
-    nodes.forEach(function(n) {
-      const p=Math.sin(n.pulse)*.5+.5;
-      const br=n.state===ST.BREACHED,cr=n.state===ST.CRASHED,re=n.state===ST.RECOVERING,ta=n.state===ST.TARGETED;
-      const gx=n.glitch>0?(Math.random()-.5)*4*n.glitch:0;
-      const gy=n.glitch>0?(Math.random()-.5)*4*n.glitch:0;
-      const nx=n.x+gx,ny=n.y+gy;
-      ctx.save();
-      if(br){ctx.shadowColor='#FF0040';ctx.shadowBlur=18+p*10;}
-      else if(ta){ctx.shadowColor='#00E5FF';ctx.shadowBlur=15;}
-      else if(!cr){ctx.shadowColor='#6B00FF';ctx.shadowBlur=7+p*4;}
-      const r=n.r+(br?p*2.5:ta?p*1.5:p*.6);
-      hex(nx,ny,r);
-      if(cr){ctx.fillStyle='rgba(20,0,20,.8)';ctx.fill();ctx.strokeStyle='rgba(80,0,80,.3)';ctx.lineWidth=.8;ctx.stroke();}
-      else if(br){ctx.fillStyle='rgba(255,0,40,.18)';ctx.fill();ctx.strokeStyle='rgba(255,0,64,'+(0.7+p*.3)+')';ctx.lineWidth=1.5;ctx.stroke();hex(nx,ny,r*.5);ctx.strokeStyle='rgba(255,100,0,.35)';ctx.lineWidth=.5;ctx.stroke();}
-      else if(ta){ctx.fillStyle='rgba(0,229,255,.08)';ctx.fill();ctx.strokeStyle='rgba(0,229,255,.8)';ctx.lineWidth=1.5;ctx.stroke();}
-      else if(re){const fl=Math.random()>.2;ctx.fillStyle='rgba(107,0,255,'+(fl?.1:.03)+')';ctx.fill();ctx.strokeStyle='rgba(168,85,247,'+(fl?.5:.1)+')';ctx.lineWidth=1;ctx.stroke();}
-      else{ctx.fillStyle='rgba(107,0,255,'+(0.05+p*.04)+')';ctx.fill();ctx.strokeStyle='rgba(168,85,247,'+(0.3+p*.2)+')';ctx.lineWidth=1;ctx.stroke();hex(nx,ny,r*.5);ctx.strokeStyle='rgba(107,0,255,'+(0.15+p*.08)+')';ctx.lineWidth=.5;ctx.stroke();}
-      ctx.beginPath();ctx.arc(nx,ny,1.5,0,Math.PI*2);
-      ctx.fillStyle=cr?'rgba(80,0,80,.4)':br?'rgba(255,0,64,.8)':'rgba(168,85,247,.7)';ctx.fill();
-      if(n.id===9&&!cr){ctx.beginPath();ctx.arc(nx,ny,r+3+p*6,0,Math.PI*2);ctx.strokeStyle='rgba(191,0,255,'+(0.3-p*.2)+')';ctx.lineWidth=.8;ctx.stroke();}
-      ctx.restore();
-      if(br&&Math.sin(n.pulse*3)>.5){ctx.save();ctx.font='500 7px "Share Tech Mono",monospace';ctx.fillStyle='rgba(255,0,64,.7)';ctx.fillText('BREACH',nx-14,ny-r-4);ctx.restore();}
-      if(cr){ctx.save();ctx.font='500 7px "Share Tech Mono",monospace';ctx.fillStyle='rgba(120,0,0,.6)';ctx.fillText('OFFLINE',nx-15,ny-r-4);ctx.restore();}
-    });
-  }
-  function loop() { update(); draw(); raf=requestAnimationFrame(loop); }
-
-  const heroEl = document.getElementById('hero');
-  const visObs = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) {
-      visible = e.isIntersecting;
-      if(visible) { if(!raf) loop(); }
-      else { if(raf) { cancelAnimationFrame(raf); raf=null; } }
-    });
-  }, {threshold:0.01});
-  visObs.observe(heroEl);
-
-  window.addEventListener('resize', function() {
-    if(raf){ cancelAnimationFrame(raf); raf=null; }
-    resize();
-    if(visible) loop();
-  });
-
-  resize();
-  loop();
-})();
+(function(){const canvas=document.getElementById('attackCanvas');if(!canvas)return;const ctx=canvas.getContext('2d');let W,H,nodes=[],edges=[],packets=[],impacts=[],phase=0,phaseTimer=180,raf=null,visible=false;const NF=[{fx:.06,fy:.17},{fx:.09,fy:.45},{fx:.06,fy:.73},{fx:.13,fy:.90},{fx:.88,fy:.13},{fx:.92,fy:.42},{fx:.87,fy:.69},{fx:.82,fy:.88},{fx:.28,fy:.08},{fx:.52,fy:.05},{fx:.74,fy:.09},{fx:.22,fy:.91},{fx:.52,fy:.94},{fx:.80,fy:.91}];const EF=[[9,8],[9,10],[8,0],[8,1],[8,2],[10,4],[10,5],[10,6],[0,1],[1,2],[2,3],[4,5],[5,6],[6,7],[0,4],[3,11],[7,13],[11,12],[12,13],[1,5],[2,6]];const ST={IDLE:0,TARGETED:1,BREACHED:2,CRASHED:3,RECOVERING:4};function resize(){const h=document.getElementById('hero');W=canvas.width=h.offsetWidth||window.innerWidth;H=canvas.height=h.offsetHeight||window.innerHeight;build();}function build(){nodes=NF.map(function(d,i){return{id:i,x:d.fx*W,y:d.fy*H,state:ST.IDLE,r:i===9?11:8,pulse:Math.random()*Math.PI*2,glitch:0};});edges=EF.map(function(e){return{a:e[0],b:e[1],dp:Math.random(),ds:.002+Math.random()*.002,attack:false};});packets=[];impacts=[];phase=0;phaseTimer=180;}function hex(x,y,r){ctx.beginPath();for(let i=0;i<6;i++){const a=(Math.PI/3)*i-Math.PI/6;i?ctx.lineTo(x+r*Math.cos(a),y+r*Math.sin(a)):ctx.moveTo(x+r*Math.cos(a),y+r*Math.sin(a));}ctx.closePath();}function infect(id,delay){setTimeout(function(){if(!nodes[id])return;nodes[id].state=ST.BREACHED;nodes[id].glitch=1;impacts.push({x:nodes[id].x,y:nodes[id].y,r:4,a:1});edges.forEach(function(e){if(e.a===id||e.b===id){e.attack=true;packets.push({from:e.a===id?e.a:e.b,to:e.a===id?e.b:e.a,t:0});}});},delay);}function startAttack(){infect(9,0);infect(8,700);infect(10,800);infect(0,1600);infect(1,1900);infect(4,1800);infect(5,2200);infect(2,2900);infect(6,3200);infect(3,3900);infect(7,4300);setTimeout(function(){nodes[0].state=ST.CRASHED;nodes[8].state=ST.CRASHED;},5200);setTimeout(function(){nodes[2].state=ST.CRASHED;nodes[5].state=ST.CRASHED;},5900);setTimeout(recover,8500);}function recover(){nodes.forEach(function(n,i){setTimeout(function(){n.state=ST.RECOVERING;setTimeout(function(){n.state=ST.IDLE;n.glitch=0;},1200+Math.random()*800);},i*180);});edges.forEach(function(e){e.attack=false;});setTimeout(function(){packets=[];phase=0;phaseTimer=220;},4000);}function update(){phaseTimer--;if(phaseTimer<=0&&phase===0){phase=1;startAttack();phaseTimer=99999;}nodes.forEach(function(n){n.pulse+=.02;if(n.glitch>0)n.glitch=Math.max(0,n.glitch-.018);});edges.forEach(function(e){e.dp=(e.dp+e.ds)%1;});packets=packets.filter(function(p){p.t+=.022;return p.t<1;});impacts=impacts.filter(function(i){i.r+=2.5;i.a-=.055;return i.a>0;});}function draw(){ctx.clearRect(0,0,W,H);edges.forEach(function(e){const na=nodes[e.a],nb=nodes[e.b];if(!na||!nb)return;const atk=e.attack||na.state===ST.BREACHED||nb.state===ST.BREACHED;ctx.save();ctx.strokeStyle=atk?'rgba(255,0,64,.3)':'rgba(107,0,255,.18)';ctx.lineWidth=atk?1:.6;if(!atk)ctx.setLineDash([4,8]);ctx.beginPath();ctx.moveTo(na.x,na.y);ctx.lineTo(nb.x,nb.y);ctx.stroke();ctx.setLineDash([]);const fx=na.x+(nb.x-na.x)*e.dp,fy=na.y+(nb.y-na.y)*e.dp;ctx.beginPath();ctx.arc(fx,fy,atk?1.8:1.2,0,Math.PI*2);ctx.fillStyle=atk?'rgba(255,0,64,.65)':'rgba(168,85,247,.45)';ctx.fill();ctx.restore();});packets.forEach(function(p){const na=nodes[p.from],nb=nodes[p.to];if(!na||!nb)return;const x=na.x+(nb.x-na.x)*p.t,y=na.y+(nb.y-na.y)*p.t;ctx.save();ctx.shadowColor='#FF0040';ctx.shadowBlur=10;ctx.beginPath();ctx.arc(x,y,3,0,Math.PI*2);ctx.fillStyle='rgba(255,80,0,.9)';ctx.fill();ctx.restore();});impacts.forEach(function(i){ctx.save();ctx.beginPath();ctx.arc(i.x,i.y,i.r,0,Math.PI*2);ctx.strokeStyle='rgba(255,0,64,'+i.a+')';ctx.lineWidth=1.5;ctx.stroke();ctx.restore();});nodes.forEach(function(n){const p=Math.sin(n.pulse)*.5+.5;const br=n.state===ST.BREACHED,cr=n.state===ST.CRASHED,re=n.state===ST.RECOVERING,ta=n.state===ST.TARGETED;const gx=n.glitch>0?(Math.random()-.5)*4*n.glitch:0,gy=n.glitch>0?(Math.random()-.5)*4*n.glitch:0;const nx=n.x+gx,ny=n.y+gy;ctx.save();if(br){ctx.shadowColor='#FF0040';ctx.shadowBlur=18+p*10;}else if(ta){ctx.shadowColor='#00E5FF';ctx.shadowBlur=15;}else if(!cr){ctx.shadowColor='#6B00FF';ctx.shadowBlur=7+p*4;}const r=n.r+(br?p*2.5:ta?p*1.5:p*.6);hex(nx,ny,r);if(cr){ctx.fillStyle='rgba(20,0,20,.8)';ctx.fill();ctx.strokeStyle='rgba(80,0,80,.3)';ctx.lineWidth=.8;ctx.stroke();}else if(br){ctx.fillStyle='rgba(255,0,40,.18)';ctx.fill();ctx.strokeStyle='rgba(255,0,64,'+(0.7+p*.3)+')';ctx.lineWidth=1.5;ctx.stroke();hex(nx,ny,r*.5);ctx.strokeStyle='rgba(255,100,0,.35)';ctx.lineWidth=.5;ctx.stroke();}else if(ta){ctx.fillStyle='rgba(0,229,255,.08)';ctx.fill();ctx.strokeStyle='rgba(0,229,255,.8)';ctx.lineWidth=1.5;ctx.stroke();}else if(re){const fl=Math.random()>.2;ctx.fillStyle='rgba(107,0,255,'+(fl?.1:.03)+')';ctx.fill();ctx.strokeStyle='rgba(168,85,247,'+(fl?.5:.1)+')';ctx.lineWidth=1;ctx.stroke();}else{ctx.fillStyle='rgba(107,0,255,'+(0.05+p*.04)+')';ctx.fill();ctx.strokeStyle='rgba(168,85,247,'+(0.3+p*.2)+')';ctx.lineWidth=1;ctx.stroke();hex(nx,ny,r*.5);ctx.strokeStyle='rgba(107,0,255,'+(0.15+p*.08)+')';ctx.lineWidth=.5;ctx.stroke();}ctx.beginPath();ctx.arc(nx,ny,1.5,0,Math.PI*2);ctx.fillStyle=cr?'rgba(80,0,80,.4)':br?'rgba(255,0,64,.8)':'rgba(168,85,247,.7)';ctx.fill();if(n.id===9&&!cr){ctx.beginPath();ctx.arc(nx,ny,r+3+p*6,0,Math.PI*2);ctx.strokeStyle='rgba(191,0,255,'+(0.3-p*.2)+')';ctx.lineWidth=.8;ctx.stroke();}ctx.restore();if(br&&Math.sin(n.pulse*3)>.5){ctx.save();ctx.font='500 7px "Share Tech Mono",monospace';ctx.fillStyle='rgba(255,0,64,.7)';ctx.fillText('BREACH',nx-14,ny-r-4);ctx.restore();}if(cr){ctx.save();ctx.font='500 7px "Share Tech Mono",monospace';ctx.fillStyle='rgba(120,0,0,.6)';ctx.fillText('OFFLINE',nx-15,ny-r-4);ctx.restore();}});}function loop(){update();draw();raf=requestAnimationFrame(loop);}const heroEl=document.getElementById('hero');const visObs=new IntersectionObserver(function(entries){entries.forEach(function(e){visible=e.isIntersecting;if(visible){if(!raf)loop();}else{if(raf){cancelAnimationFrame(raf);raf=null;}}});},{threshold:0.01});visObs.observe(heroEl);window.addEventListener('resize',function(){if(raf){cancelAnimationFrame(raf);raf=null;}resize();if(visible)loop();});resize();loop();})();
 
 // GEO PRICING
-(function() {
-  function applyPricing(showIDR) {
-    document.querySelectorAll('.price-usd').forEach(el => { el.style.display = showIDR ? 'none' : ''; });
-    document.querySelectorAll('.price-idr').forEach(el => { el.style.display = showIDR ? '' : 'none'; });
-  }
-  fetch('https://ipapi.co/json/', { signal: AbortSignal.timeout(3000) })
-    .then(r => r.json())
-    .then(data => { applyPricing(data && data.country_code === 'ID'); })
-    .catch(() => { applyPricing(false); });
-})();
+(function(){function applyPricing(showIDR){document.querySelectorAll('.price-usd').forEach(el=>{el.style.display=showIDR?'none':'';});document.querySelectorAll('.price-idr').forEach(el=>{el.style.display=showIDR?'':'none';});}fetch('https://ipapi.co/json/',{signal:AbortSignal.timeout(3000)}).then(r=>r.json()).then(data=>{applyPricing(data&&data.country_code==='ID');}).catch(()=>{applyPricing(false);});})();
 
-// Capabilities Tab + Slider
-(function() {
-  const tabBtns = document.querySelectorAll('.caps-tab');
-  const panels = document.querySelectorAll('.caps-panel');
-  const dotsContainer = document.getElementById('sliderDots');
-  const prevBtn = document.getElementById('sliderPrev');
-  const nextBtn = document.getElementById('sliderNext');
-
-  let currentTab = 0;
-  let currentPage = 0;
-  const CARDS_PER_PAGE = 3;
-
-  function getCards() {
-    return Array.from(panels[currentTab].querySelectorAll('.cap-card-s'));
-  }
-
-  function totalPages() {
-    return Math.ceil(getCards().length / CARDS_PER_PAGE);
-  }
-
-  function renderDots() {
-    dotsContainer.innerHTML = '';
-    const n = totalPages();
-    for (let i = 0; i < n; i++) {
-      const d = document.createElement('div');
-      d.className = 'slider-dot' + (i === currentPage ? ' active' : '');
-      d.addEventListener('click', function() { goTo(i); });
-      dotsContainer.appendChild(d);
-    }
-  }
-
-  function showPage(page) {
-    const cards = getCards();
-    cards.forEach(function(c, i) {
-      const pageIdx = Math.floor(i / CARDS_PER_PAGE);
-      c.style.display = pageIdx === page ? '' : 'none';
-    });
-    prevBtn.disabled = page === 0;
-    nextBtn.disabled = page >= totalPages() - 1;
-    renderDots();
-  }
-
-  function goTo(page) {
-    currentPage = page;
-    showPage(currentPage);
-  }
-
-  function switchTab(tabIdx) {
-    currentTab = tabIdx;
-    currentPage = 0;
-    tabBtns.forEach(function(b, i) { b.classList.toggle('active', i === tabIdx); });
-    panels.forEach(function(p, i) { p.style.display = i === tabIdx ? '' : 'none'; });
-    showPage(0);
-  }
-
-  tabBtns.forEach(function(btn, i) {
-    btn.addEventListener('click', function() { switchTab(i); });
-  });
-
-  prevBtn.addEventListener('click', function() {
-    if (currentPage > 0) goTo(currentPage - 1);
-  });
-  nextBtn.addEventListener('click', function() {
-    if (currentPage < totalPages() - 1) goTo(currentPage + 1);
-  });
-
-  // Init
-  switchTab(0);
-})();
+// CAPABILITIES TAB + SLIDER (5 tabs)
+(function(){var tabs=document.querySelectorAll('.caps-tab');var panels=[document.getElementById('panel0'),document.getElementById('panel1'),document.getElementById('panel2'),document.getElementById('panel3'),document.getElementById('panel4')];var dots=document.getElementById('sliderDots');var prevBtn=document.getElementById('sliderPrev');var nextBtn=document.getElementById('sliderNext');var COLS=3;var currentTab=0;var currentPage=0;function getCards(){return Array.from(panels[currentTab].querySelectorAll('.cap-card-s'));}function numPages(){return Math.ceil(getCards().length/COLS);}function renderDots(){dots.innerHTML='';var n=numPages();for(var i=0;i<n;i++){(function(idx){var d=document.createElement('div');d.className='slider-dot'+(idx===currentPage?' active':'');d.addEventListener('click',function(){goTo(idx);});dots.appendChild(d);})(i);}}function showPage(page){var cards=getCards();cards.forEach(function(c,i){c.style.display=(Math.floor(i/COLS)===page)?'':'none';});prevBtn.disabled=page===0;nextBtn.disabled=page>=numPages()-1;renderDots();}function goTo(page){currentPage=page;showPage(currentPage);}function switchTab(idx){currentTab=idx;currentPage=0;tabs.forEach(function(b,i){b.classList.toggle('active',i===idx);});panels.forEach(function(p,i){p.style.display=i===idx?'':'none';});var w=window.innerWidth;COLS=w<=600?1:w<=900?2:3;showPage(0);}tabs.forEach(function(btn,i){btn.addEventListener('click',function(){switchTab(i);});});prevBtn.addEventListener('click',function(){if(currentPage>0)goTo(currentPage-1);});nextBtn.addEventListener('click',function(){if(currentPage<numPages()-1)goTo(currentPage+1);});window.addEventListener('resize',function(){var w=window.innerWidth;COLS=w<=600?1:w<=900?2:3;showPage(currentPage);});switchTab(0);})();
 </script>
 </body>
 </html>
