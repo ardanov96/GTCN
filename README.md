@@ -1,27 +1,69 @@
-# GLITCHICONS ⬡
-> **Decepticons Siege Division** — AI-Powered Fuzzing Intelligence
+# GLITCHICONS — Landing Page
 
-Landing page for Glitchicons — open-source offensive fuzzing toolkit.
+> Official landing page for [GLITCHICONS](https://github.com/ardanov96/glitchicons) — AI-Powered Security Research Platform
+
+**Live:** https://ardanov96.github.io/GTCN/
+
+---
+
+## About
+
+This repository hosts the static landing page for the Glitchicons security platform, served via GitHub Pages.
+
+## Stack
+
+- Pure HTML + CSS + Vanilla JS — no framework, no build step
+- Self-contained single file (`index.html`)
+- Hosted via GitHub Pages (branch: `master`)
 
 ## Structure
+
 ```
-glitchicons/
-├── index.html        ← Single page, English, geo-adaptive pricing
-├── glitchicons.png   ← Logo (standalone)
-├── .nojekyll         ← Required for GitHub Pages
-└── README.md
+GTCN/
+├── index.html        # Main landing page
+├── style.css         # Dark theme stylesheet
+├── glitchicons.png   # Logo
+├── og-preview.png    # Social media preview
+├── robots.txt
+└── sitemap.xml
 ```
 
-## Deploy → GitHub Pages
-1. New repo → Public → upload files
-2. Settings → Pages → Branch: main / root → Save
-3. Live at: `https://[username].github.io/glitchicons/`
+## Features
 
-## Pricing Logic
-- Visitor from **Indonesia (ID)** → IDR shown first, USD secondary
-- All other countries → USD shown first, IDR secondary
-- Detection: `ipapi.co` (free, no API key, <1s latency)
-- Fallback on timeout: USD (default)
+- Loading screen + attack canvas animation
+- Custom cursor + spark effects
+- Scroll reveal animations
+- Interactive capabilities section (5-tab slider)
+- Geo-based pricing (USD / IDR)
+- Responsive mobile layout
 
-## License
-MIT © 2026 ARDATRON
+## Current Version
+
+**v2.0.0** — reflecting Glitchicons platform:
+- 1083 unit tests · 0 failures
+- 6 Go binaries (glitchrace, glitchscan, glitchfuzz, glitchdns, glitchtls, glitchproxy)
+- 28 attack modules
+- Web Dashboard (FastAPI + SSE)
+- Multi-Target Orchestrator
+- Cloud Security (S3/Azure/GCP/IMDS)
+- Auth Expansion (SAML/PKCE/SSO/API Key)
+
+## Deploy
+
+Push to `master` — GitHub Pages deploys automatically.
+
+```bash
+git add index.html style.css
+git commit -m "update: ..."
+git push
+```
+
+## Links
+
+- Platform repo: https://github.com/ardanov96/glitchicons
+- Live site: https://ardanov96.github.io/GTCN/
+- Contact: ardanov96@gmail.com
+
+---
+
+MIT License © 2026 GLITCHICONS
