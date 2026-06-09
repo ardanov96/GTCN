@@ -39,17 +39,19 @@ GTCN/
 
 ## Current Version
 
-**v5.2.0** — reflecting Glitchicons platform:
+**v5.5.0** — Glitchicons platform COMPLETE:
 - 1757 unit tests · 0 failures
-- 34 Go binaries across 4 tiers
+- 37 Go binaries across 4 tiers
 - 9 CVE verifiers (Log4Shell · Zerologon · BlueKeep · CitrixBleed · PAN-OS · more)
-- Active Directory attack suite (Kerberos AS-REP roasting · LDAP AD dump)
+- Active Directory (Kerberos AS-REP roasting · LDAP AD dump)
 - HTTP request smuggling (CL.TE · TE.CL · TE.TE · h2c)
 - WAF bypass coverage tester
 - SIEM detection coverage (MITRE ATT&CK simulation)
-- Supply chain security (dependency confusion · typosquatting)
-- Cloud security posture (AWS · Azure · GCP · CIS Benchmark)
-- AI report generation (Anthropic · OpenAI · Ollama)
+- Supply chain security (dependency confusion · typosquatting · npm/pip/go)
+- Cloud security posture (AWS · Azure · GCP · 15 CIS controls)
+- IoT/ICS scanner (Telnet · MQTT · CoAP · Modbus · UPnP · CIDR scan)
+- AI-assisted testing (Ollama/Groq/Anthropic/OpenAI · triage/payload/recon/summary/chat)
+- Distributed orchestrator (multi-node · dashboard · round-robin · MD5 dedup)
 
 ### Go Binary Tiers
 
@@ -57,8 +59,8 @@ GTCN/
 |------|-------|-------|
 | Tier 1 — Foundation | 7 | Network speed: race/scan/fuzz/dns/tls/proxy |
 | Tier 2 — Protocol Depth | 8 | SMB · SSH · RDP · LDAP · SNMP · FTP · VNC · WMI |
-| Tier 3 — Offensive Ops | 15 | Brute · Kerberos · NTLM relay · Exploit · Pivot · IDS evasion |
-| Tier 4 — Elite Assessment | 4 | WAF testing · SIEM coverage · Supply chain · Cloud posture |
+| Tier 3 — Offensive Ops | 15 | Brute · Kerberos · NTLM relay · CVE verify · Pivot · IDS evasion |
+| Tier 4 — Elite Assessment | 7 | WAF · SIEM · Supply chain · Cloud · IoT · AI · Distributed |
 
 ## Deploy
 
