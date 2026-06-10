@@ -45,13 +45,13 @@ GTCN/
 - 9 CVE verifiers (Log4Shell · Zerologon · BlueKeep · CitrixBleed · PAN-OS · more)
 - Active Directory (Kerberos AS-REP roasting · LDAP AD dump)
 - HTTP request smuggling (CL.TE · TE.CL · TE.TE · h2c)
-- WAF bypass coverage tester
-- SIEM detection coverage (MITRE ATT&CK simulation)
+- WAF bypass coverage tester + SIEM detection coverage
 - Supply chain security (dependency confusion · typosquatting · npm/pip/go)
 - Cloud security posture (AWS · Azure · GCP · 15 CIS controls)
 - IoT/ICS scanner (Telnet · MQTT · CoAP · Modbus · UPnP · CIDR scan)
 - AI-assisted testing (Ollama/Groq/Anthropic/OpenAI · triage/payload/recon/summary/chat)
-- Distributed orchestrator (multi-node · dashboard · round-robin · MD5 dedup)
+- Distributed orchestrator (multi-node · dashboard :7330 · round-robin · MD5 dedup)
+- Pipeline integration: orchestrator → glitchai auto-triage (--ai-triage flag)
 
 ### Go Binary Tiers
 
@@ -61,6 +61,12 @@ GTCN/
 | Tier 2 — Protocol Depth | 8 | SMB · SSH · RDP · LDAP · SNMP · FTP · VNC · WMI |
 | Tier 3 — Offensive Ops | 15 | Brute · Kerberos · NTLM relay · CVE verify · Pivot · IDS evasion |
 | Tier 4 — Elite Assessment | 7 | WAF · SIEM · Supply chain · Cloud · IoT · AI · Distributed |
+
+### Platform Documentation
+- [CHANGELOG.md](https://github.com/ardanov96/glitchicons/blob/main/CHANGELOG.md) — 21 versions documented (v0.7.0 → v5.5.0)
+- [CONTRIBUTING.md](https://github.com/ardanov96/glitchicons/blob/main/CONTRIBUTING.md) — setup guide, module templates, PR requirements
+- [SECURITY.md](https://github.com/ardanov96/glitchicons/blob/main/SECURITY.md) — responsible disclosure policy
+- [FINDING_SCHEMA.md](https://github.com/ardanov96/glitchicons/blob/main/FINDING_SCHEMA.md) — standard output schema for all binaries
 
 ## Deploy
 
